@@ -1,3 +1,3 @@
-import config from "@tsmono/prettier-config";
+import config from "./tooling/prettier-config/index.js";
 
 export default config;
