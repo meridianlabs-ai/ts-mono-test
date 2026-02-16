@@ -1,6 +1,5 @@
 import { ColumnSizingState, OnChangeFn } from "@tanstack/react-table";
 import { useCallback, useEffect, useMemo, useRef } from "react";
-
 import { useStore } from "../../../state/store";
 import {
   clampSize,

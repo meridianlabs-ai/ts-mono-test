@@ -1,6 +1,5 @@
 import { FC, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { useLoggingNavigate } from "../../debugging/navigationDebugging";
 import { scanResultRoute } from "../../router/url";
 import { useStore } from "../../state/store";

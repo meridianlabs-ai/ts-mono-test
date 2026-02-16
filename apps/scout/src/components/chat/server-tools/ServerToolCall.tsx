@@ -1,13 +1,11 @@
 import { asJsonObjArray, isJson } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { ContentToolUse } from "../../../types/api-types";
 import { RecordTree } from "../../content/RecordTree";
 import { RenderedContent } from "../../content/RenderedContent";
 import ExpandablePanel from "../../ExpandablePanel";
 import { ApplicationIcons } from "../../icons";
-
 import styles from "./ServerToolCall.module.css";
 
 interface ServerToolCallProps {

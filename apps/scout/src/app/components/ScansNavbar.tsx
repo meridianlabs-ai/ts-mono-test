@@ -1,12 +1,10 @@
 import { dirname } from "@tsmono/common";
 import { FC, ReactNode, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { ApplicationIcons } from "../../components/icons";
 import { scanRoute, scansRoute } from "../../router/url";
 import { useStore } from "../../state/store";
 import { useScanRoute } from "../hooks/useScanRoute";
-
 import { EditablePath } from "./EditablePath";
 import { Navbar } from "./Navbar";
 import { NavButton } from "./NavButtons";

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { useLoggingNavigate } from "../../debugging/navigationDebugging";
 import { transcriptRoute } from "../../router/url";
 import { Transcript } from "../../types/api-types";

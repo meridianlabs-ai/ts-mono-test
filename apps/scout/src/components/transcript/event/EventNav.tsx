@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC, useCallback } from "react";
-
 import styles from "./EventNav.module.css";
 
 interface EventNavProps {

@@ -5,7 +5,6 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-
 import { ActivityBarLayout } from "./app/components/ActivityBarLayout";
 import { ProjectPanel } from "./app/project/ProjectPanel";
 import { RunScanPanel } from "./app/runScan/RunScanPanel";
@@ -23,16 +22,16 @@ import {
 } from "./debugging/navigationDebugging";
 import { useWindowMessaging } from "./hooks/useWindowMessaging";
 import {
+  isValidScanPath,
+  kProjectRouteUrlPattern,
+  kScanRouteUrlPattern,
   kScansRootRouteUrlPattern,
   kScansRouteUrlPattern,
   kScansWithPathRouteUrlPattern,
-  kScanRouteUrlPattern,
-  isValidScanPath,
-  parseScanParams,
-  kTranscriptsRouteUrlPattern,
   kTranscriptDetailRoute,
-  kProjectRouteUrlPattern,
+  kTranscriptsRouteUrlPattern,
   kValidationRouteUrlPattern,
+  parseScanParams,
   scanResultRoute,
   scanRoute,
   scansRoute,

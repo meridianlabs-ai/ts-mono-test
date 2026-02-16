@@ -3,7 +3,6 @@
 import { formatDateTime } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode, useEffect, useMemo } from "react";
-
 import { useStore } from "../../../state/store";
 import {
   JsonChange,
@@ -13,7 +12,6 @@ import {
 } from "../../../types/api-types";
 import { EventPanel } from "../event/EventPanel";
 import { EventNode, kTranscriptCollapseScope } from "../types";
-
 import { StateDiffView } from "./StateDiffView";
 import {
   RenderableChangeTypes,

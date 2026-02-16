@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-
 import { MarkdownReference } from "../../components/MarkdownDivWithReferences";
 
 export const Buckets = {

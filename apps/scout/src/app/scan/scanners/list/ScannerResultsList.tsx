@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { FC, useCallback, useEffect, useMemo, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { VirtuosoHandle } from "react-virtuoso";
-
 import { LiveVirtualList } from "../../../../components/LiveVirtualList";
 import { LoadingBar } from "../../../../components/LoadingBar";
 import { NoContentsPanel } from "../../../../components/NoContentsPanel";
@@ -24,7 +23,6 @@ import {
   kFilterAllResults,
   kFilterPositiveResults,
 } from "../results/ScannerResultsFilter";
-
 import { ScannerResultsGroup } from "./ScannerResultsGroup";
 import { ScannerResultsHeader } from "./ScannerResultsHeader";
 import styles from "./ScannerResultsList.module.css";

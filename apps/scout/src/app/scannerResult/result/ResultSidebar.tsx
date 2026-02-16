@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC } from "react";
-
 import { MetaDataGrid } from "../../../components/content/MetaDataGrid";
 import { MarkdownReference } from "../../../components/MarkdownDivWithReferences";
 import { NoContentsPanel } from "../../../components/NoContentsPanel";
@@ -10,7 +9,6 @@ import { Value } from "../../components/Value";
 import { useSelectedScanResultInputData } from "../../hooks/useSelectedScanResultInputData";
 import { ScanResultData } from "../../types";
 import { useMarkdownRefs } from "../../utils/refs";
-
 import styles from "./ResultSidebar.module.css";
 
 interface ResultSidebarProps {

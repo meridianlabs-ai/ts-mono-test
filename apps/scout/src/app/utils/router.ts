@@ -1,7 +1,6 @@
 import { decodeBase64Url } from "@tsmono/common";
 import { useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
-
 import { useStore } from "../../state/store";
 
 export const useTranscriptDirParams = (): string | undefined => {

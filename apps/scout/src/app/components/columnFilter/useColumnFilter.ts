@@ -4,7 +4,6 @@ import {
   parseDateFromInput,
 } from "@tsmono/common";
 import { useCallback, useEffect, useRef, useState } from "react";
-
 import { ConditionBuilder } from "../../../query";
 import type { OperatorModel, ScalarValue } from "../../../query";
 import type { SimpleCondition } from "../../../query/types";

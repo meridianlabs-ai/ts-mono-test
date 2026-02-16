@@ -1,17 +1,17 @@
 import {
   ApprovalEvent,
   CompactionEvent,
-  JsonChange,
   ErrorEvent,
   InfoEvent,
   InputEvent,
+  JsonChange,
   LoggerEvent,
   ModelEvent,
   SampleInitEvent,
   SampleLimitEvent,
   SandboxEvent,
-  ScoreEvent,
   ScoreEditEvent,
+  ScoreEvent,
   SpanBeginEvent,
   SpanEndEvent,
   StateEvent,
@@ -20,8 +20,7 @@ import {
   SubtaskEvent,
   ToolEvent,
 } from "../../types/api-types";
-
-import { STEP, SPAN_BEGIN, TYPE_TOOL, TYPE_SUBTASK } from "./transform/utils";
+import { SPAN_BEGIN, STEP, TYPE_SUBTASK, TYPE_TOOL } from "./transform/utils";
 
 export interface StateManager {
   scope: string;

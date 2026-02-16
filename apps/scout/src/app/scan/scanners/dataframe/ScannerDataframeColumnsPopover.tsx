@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import { FC, useCallback } from "react";
-
 import { PopOver } from "../../../../components/PopOver";
 import { useStore } from "../../../../state/store";
-
 import { defaultColumns } from "./../types";
 import styles from "./ScannerDataframeColumnsPopover.module.css";
 

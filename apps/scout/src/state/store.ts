@@ -10,7 +10,6 @@ import { StateSnapshot } from "react-virtuoso";
 import { create } from "zustand";
 import { createJSONStorage, devtools, persist } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
-
 import { ScoutApiV2 } from "../api/api";
 import { ColumnSizingStrategyKey } from "../app/components/columnSizing";
 import type { ScanColumnKey } from "../app/scans/columns";

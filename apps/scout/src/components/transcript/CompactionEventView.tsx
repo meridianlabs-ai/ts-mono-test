@@ -1,10 +1,8 @@
 import { formatDateTime } from "@tsmono/common";
 import { FC } from "react";
-
 import { CompactionEvent } from "../../types/api-types";
 import { MetaDataGrid } from "../content/MetaDataGrid";
 import { ApplicationIcons } from "../icons";
-
 import styles from "./CompactionEventView.module.css";
 import { EventPanel } from "./event/EventPanel";
 import { formatTitle } from "./event/utils";

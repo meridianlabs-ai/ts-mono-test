@@ -5,7 +5,6 @@ import {
 } from "@vscode-elements/react-elements";
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useBlocker } from "react-router-dom";
-
 import { ApiError } from "../../api/request";
 import { Modal } from "../../components/Modal";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
@@ -15,7 +14,6 @@ import {
   useProjectConfig,
   useUpdateProjectConfig,
 } from "../server/useProjectConfig";
-
 import {
   computeConfigToSave,
   configsEqual,

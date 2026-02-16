@@ -7,7 +7,6 @@ import {
 import clsx from "clsx";
 import React, { FC, ReactNode, useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { ConfirmationDialog } from "../../../components/ConfirmationDialog";
 import { ErrorPanel } from "../../../components/ErrorPanel";
 import { ApplicationIcons } from "../../../components/icons";
@@ -42,7 +41,6 @@ import {
   hasValidationSetExtension,
   isValidFilename,
 } from "../utils";
-
 import styles from "./ValidationCaseEditor.module.css";
 import { ValidationCaseLabelsEditor } from "./ValidationCaseLabelsEditor";
 import {

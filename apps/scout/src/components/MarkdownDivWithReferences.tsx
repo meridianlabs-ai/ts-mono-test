@@ -9,10 +9,8 @@ import {
   useRef,
   useState,
 } from "react";
-
 import { useLoggingNavigate } from "../debugging/navigationDebugging";
 import { useStore } from "../state/store";
-
 import { MarkdownDiv } from "./MarkdownDiv";
 import styles from "./MarkdownDivWithReferences.module.css";
 import { NoContentsPanel } from "./NoContentsPanel";

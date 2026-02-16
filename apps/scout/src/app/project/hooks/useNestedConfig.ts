@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from "react";
-
 import { filterNullValues } from "../configUtils";
 
 /**

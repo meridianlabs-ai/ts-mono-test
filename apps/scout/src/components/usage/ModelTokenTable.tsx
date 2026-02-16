@@ -1,7 +1,5 @@
 import { FC } from "react";
-
 import { ModelUsage } from "../../types/api-types";
-
 import { TokenHeader, TokenRow, TokenTable } from "./TokenTable";
 
 interface ModelTokenTableProps {

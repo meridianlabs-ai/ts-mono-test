@@ -1,13 +1,9 @@
-import { formatDateTime } from "@tsmono/common";
-import { toRelativePath } from "@tsmono/common";
-import { prettyDirUri } from "@tsmono/common";
+import { formatDateTime, prettyDirUri, toRelativePath } from "@tsmono/common";
 import clsx from "clsx";
 import { FC } from "react";
-
 import { CopyButton } from "../../components/CopyButton";
 import { ApplicationIcons } from "../../components/icons";
 import { Status } from "../../types/api-types";
-
 import styles from "./ScanPanelTitle.module.css";
 
 export const ScanPanelTitle: FC<{

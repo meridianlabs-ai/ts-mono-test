@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-
 import { TranscriptInfo } from "../../../types/api-types";
 import {
   getSizingStrategy,

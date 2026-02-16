@@ -1,5 +1,4 @@
 import { FC, useCallback } from "react";
-
 import { GRID_STATE_NAME } from "../../../../components/DataframeView";
 import { ApplicationIcons } from "../../../../components/icons";
 import { ToolButton } from "../../../../components/ToolButton";

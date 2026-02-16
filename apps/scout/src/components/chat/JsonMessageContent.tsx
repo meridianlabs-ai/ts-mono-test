@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
-
 import { RecordTree } from "../content/RecordTree";
-
 import styles from "./JsonMessageContent.module.css";
 
 export interface JsonMessageContentProps {

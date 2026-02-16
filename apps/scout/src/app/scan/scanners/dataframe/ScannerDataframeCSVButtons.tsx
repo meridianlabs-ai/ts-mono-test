@@ -1,10 +1,8 @@
 import { FC, useCallback, useEffect, useRef, useState } from "react";
-
 import { ApplicationIcons } from "../../../../components/icons";
 import { ToolButton } from "../../../../components/ToolButton";
 import { useStore } from "../../../../state/store";
 import { defaultColumns } from "../types";
-
 import { useDataframeGridApi } from "./DataframeGridApiContext";
 
 /** Transient status for copy/download operations */

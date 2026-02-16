@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import styles from "./Navbar.module.css";
 import { NavButton, NavButtons } from "./NavButtons";
 

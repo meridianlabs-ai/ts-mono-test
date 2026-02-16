@@ -9,14 +9,12 @@ import {
   useRef,
 } from "react";
 import { Virtuoso, VirtuosoHandle } from "react-virtuoso";
-
 import { useTranscriptNavigation } from "../../../app/transcript/hooks/useTranscriptNavigation";
 import { useScrollTrack, useVirtuosoState } from "../../../state/scrolling";
 import { useStore } from "../../../state/store";
 import { kSandboxSignalName } from "../transform/fixups";
 import { flatTree } from "../transform/flatten";
 import { EventNode, kTranscriptOutlineCollapseScope } from "../types";
-
 import { OutlineRow } from "./OutlineRow";
 import styles from "./TranscriptOutline.module.css";
 import {

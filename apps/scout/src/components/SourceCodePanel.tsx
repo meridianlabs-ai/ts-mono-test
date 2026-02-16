@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { CSSProperties, FC, useRef } from "react";
-
 import { usePrismHighlight } from "./prism";
 import styles from "./SourceCodePanel.module.css";
 

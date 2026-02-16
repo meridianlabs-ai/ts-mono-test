@@ -1,10 +1,8 @@
 import { FC, useCallback, useRef } from "react";
-
 import { ScalarValue } from "../../../api/api";
 import { PopOver } from "../../../components/PopOver";
 import type { SimpleCondition } from "../../../query/types";
 import type { FilterType } from "../../../state/store";
-
 import { ColumnFilterButton } from "./ColumnFilterButton";
 import styles from "./ColumnFilterControl.module.css";
 import { ColumnFilterEditor } from "./ColumnFilterEditor";

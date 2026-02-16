@@ -1,7 +1,5 @@
 import { FC } from "react";
-
 import { Event } from "../../types/api-types";
-
 import { useEventNodes } from "./hooks/useEventNodes";
 import { TranscriptViewNodes } from "./TranscriptViewNodes";
 import { EventNode, EventType } from "./types";

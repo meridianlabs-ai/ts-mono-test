@@ -1,10 +1,8 @@
 import { AsyncData, data, loading } from "@tsmono/common";
 import { ColumnTable } from "arquero";
 import { useEffect, useMemo, useState } from "react";
-
 import { ScanResultData } from "../types";
 import { parseScanResultData } from "../utils/arrowHelpers";
-
 import { useSelectedScanDataframe } from "./useSelectedScanDataframe";
 
 export const useSelectedScanResultData = (

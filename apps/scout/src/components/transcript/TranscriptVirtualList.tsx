@@ -1,6 +1,5 @@
 import { FC, memo, RefObject } from "react";
 import { VirtuosoHandle } from "react-virtuoso";
-
 import {
   ApprovalEvent,
   CompactionEvent,
@@ -21,7 +20,6 @@ import {
   SubtaskEvent,
   ToolEvent,
 } from "../../types/api-types";
-
 import { ApprovalEventView } from "./ApprovalEventView";
 import { CompactionEventView } from "./CompactionEventView";
 import { ErrorEventView } from "./ErrorEventView";

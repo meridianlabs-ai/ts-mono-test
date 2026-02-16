@@ -1,11 +1,9 @@
 import { isRecord } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, Fragment, JSX, ReactNode } from "react";
-
 import { ChatMessage, JsonChange } from "../../../types/api-types";
 import { ChatView } from "../../chat/ChatView";
 import { HumanBaselineView, SessionLog } from "../../HumanBaselineView";
-
 import styles from "./StateEventRenders.module.css";
 
 interface Signature {

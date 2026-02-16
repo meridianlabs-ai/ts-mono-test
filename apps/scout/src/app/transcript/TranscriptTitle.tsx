@@ -1,12 +1,10 @@
 import { formatDateTime, formatNumber, formatTime } from "@tsmono/common";
 import clsx from "clsx";
 import { FC } from "react";
-
 import { Transcript } from "../../types/api-types";
 import { HeadingGrid, HeadingValue } from "../components/HeadingGrid";
 import { ScoreValue } from "../components/ScoreValue";
 import { TaskName } from "../components/TaskName";
-
 import styles from "./TranscriptTitle.module.css";
 
 interface TranscriptTitleProps {

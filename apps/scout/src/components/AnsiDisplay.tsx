@@ -1,7 +1,6 @@
 import { ANSIColor, ANSIOutput, ANSIOutputRun, ANSIStyle } from "ansi-output";
 import clsx from "clsx";
 import { CSSProperties, FC, useState } from "react";
-
 import styles from "./AnsiDisplay.module.css";
 import { ToolButton } from "./ToolButton";
 

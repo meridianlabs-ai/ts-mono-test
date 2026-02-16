@@ -1,17 +1,13 @@
-import { formatDateTime, formatTime } from "@tsmono/common";
-import { parsePackageName } from "@tsmono/common";
+import { formatDateTime, formatTime, parsePackageName } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode, useRef } from "react";
 import { Link } from "react-router-dom";
-
-
 import { MetaDataGrid } from "../../content/MetaDataGrid";
 import { ApplicationIcons } from "../../icons";
 import { PulsingDots } from "../../PulsingDots";
 import { useCollapseTranscriptEvent } from "../hooks/useCollapseTranscriptEvent";
 import { kSandboxSignalName } from "../transform/fixups";
 import { EventNode } from "../types";
-
 import styles from "./OutlineRow.module.css";
 
 export interface OutlineRowProps {

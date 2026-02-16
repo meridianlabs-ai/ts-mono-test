@@ -1,10 +1,8 @@
 import { AsyncData, data } from "@tsmono/common";
 import { useMemo } from "react";
-
 import { useMapAsyncData } from "../../hooks/useMapAsyncData";
 import { useStore } from "../../state/store";
 import { Status } from "../../types/api-types";
-
 import { useSelectedScan } from "./useSelectedScan";
 
 export const useSelectedScanner = (): AsyncData<string> => {

@@ -1,24 +1,20 @@
-import { printArray } from "@tsmono/common";
-import { formatPrettyDecimal } from "@tsmono/common";
-import { printObject } from "@tsmono/common";
+import { formatPrettyDecimal, printArray, printObject } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, Fragment, ReactNode } from "react";
-
 import { RecordTree } from "../../components/content/RecordTree";
 import {
   MarkdownDivWithReferences,
   MarkdownReference,
 } from "../../components/MarkdownDivWithReferences";
 import {
-  ScanResultSummary,
-  isStringValue,
-  isNumberValue,
+  isArrayValue,
   isBooleanValue,
   isNullValue,
-  isArrayValue,
+  isNumberValue,
   isObjectValue,
+  isStringValue,
+  ScanResultSummary,
 } from "../types";
-
 import styles from "./Value.module.css";
 
 interface ValueProps {

@@ -1,10 +1,9 @@
 import {
   Event,
-  StepEvent,
   SpanBeginEvent,
   SpanEndEvent,
+  StepEvent,
 } from "../../../types/api-types";
-
 import { hasSpans } from "./utils";
 
 // It will be caught elsewhere and rendered with a pretty name

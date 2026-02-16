@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { ApplicationIcons } from "./icons";
 import "./Card.css";
 

@@ -1,14 +1,12 @@
 import { formatNumber } from "@tsmono/common";
 import clsx from "clsx";
 import { FC } from "react";
-
 import { Card, CardBody, CardHeader } from "../../../components/Card";
 import { MetaDataGrid } from "../../../components/content/MetaDataGrid";
 import { RecordTree } from "../../../components/content/RecordTree";
 import { LabeledValue } from "../../../components/LabeledValue";
 import { ModelTokenTable } from "../../../components/usage/ModelTokenTable";
 import { ScanResultData } from "../../types";
-
 import styles from "./InfoPanel.module.css";
 
 interface InfoPanelProps {

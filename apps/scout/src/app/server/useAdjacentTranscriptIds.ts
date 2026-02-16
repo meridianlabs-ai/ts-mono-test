@@ -2,10 +2,8 @@ import { skipToken } from "@tanstack/react-query";
 import { SortingState } from "@tanstack/react-table";
 import { AsyncData, data, loading } from "@tsmono/common";
 import { useEffect, useMemo } from "react";
-
 import { Condition } from "../../query";
 import { TranscriptsResponse } from "../../types/api-types";
-
 import { useServerTranscriptsInfinite } from "./useServerTranscriptsInfinite";
 
 type Position = { pageIndex: number; itemIndex: number };

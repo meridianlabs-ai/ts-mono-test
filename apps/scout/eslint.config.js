@@ -1,5 +1,5 @@
-import tseslint from "typescript-eslint";
 import reactConfig from "@tsmono/eslint-config/react";
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {

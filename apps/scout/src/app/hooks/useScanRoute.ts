@@ -1,7 +1,6 @@
 import { join } from "@tsmono/common";
 import { useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
-
 import { parseScanParams } from "../../router/url";
 import { useStore } from "../../state/store";
 import { useAppConfig } from "../server/useAppConfig";

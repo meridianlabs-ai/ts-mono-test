@@ -5,7 +5,6 @@ import {
   VscodeSingleSelect,
 } from "@vscode-elements/react-elements";
 import { FC, useState } from "react";
-
 import { ApplicationIcons } from "../../components/icons";
 import { ScansNavbar } from "../components/ScansNavbar";
 import { TranscriptsNavbar } from "../components/TranscriptsNavbar";
@@ -16,7 +15,6 @@ import { useStartScan } from "../server/useStartScan";
 import { TranscriptFilterBar } from "../transcripts/TranscriptFilterBar";
 import { useScansDir } from "../utils/useScansDir";
 import { useTranscriptsDir } from "../utils/useTranscriptsDir";
-
 import { LlmScannerParams, LlmScannerParamsValue } from "./LlmScannerParams";
 import styles from "./RunScanPanel.module.css";
 import { ScannerParamsPlaceholder } from "./ScannerParamsPlaceholder";

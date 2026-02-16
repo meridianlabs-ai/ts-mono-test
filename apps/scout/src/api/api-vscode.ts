@@ -4,7 +4,6 @@
  */
 
 import { VSCodeApi } from "@tsmono/common";
-
 import { ScoutApiV2 } from "./api";
 import { apiScoutServer } from "./api-scout-server";
 import { webViewJsonRpcClient } from "./jsonrpc";

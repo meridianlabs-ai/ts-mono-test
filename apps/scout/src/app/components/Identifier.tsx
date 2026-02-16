@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { ScanResultSummary } from "../types";
 import { resultIdentifier } from "../utils/results";
-
 import styles from "./Identifier.module.css";
 
 interface IndentifierProps {

@@ -8,11 +8,9 @@ import {
   useState,
 } from "react";
 import { Components, Virtuoso, VirtuosoHandle } from "react-virtuoso";
-
 import { usePreviousValue } from "../hooks/usePreviousValue";
 import { useProperty } from "../state/hooks/useProperty";
 import { useRafThrottle, useVirtuosoState } from "../state/scrolling";
-
 import { ExtendedFindFn, useExtendedFind } from "./ExtendedFindContext";
 import styles from "./LiveVirtualList.module.css";
 import { PulsingDots } from "./PulsingDots";

@@ -1,13 +1,11 @@
 import { formatDateTime } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, Fragment } from "react";
-
 import { ScoreValue } from "../../app/components/ScoreValue";
 import { ScoreEvent } from "../../types/api-types";
 import { RecordTree } from "../content/RecordTree";
 import { RenderedText } from "../content/RenderedText";
 import { ApplicationIcons } from "../icons";
-
 import { EventPanel } from "./event/EventPanel";
 import styles from "./ScoreEventView.module.css";
 import { EventNode } from "./types";

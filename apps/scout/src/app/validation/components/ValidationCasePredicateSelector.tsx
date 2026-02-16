@@ -3,10 +3,8 @@ import {
   VscodeSingleSelect,
 } from "@vscode-elements/react-elements";
 import { FC } from "react";
-
 import { useDropdownPosition } from "../../../hooks/useDropdownPosition";
 import { ValidationCase } from "../../../types/api-types";
-
 import styles from "./ValidationSetSelector.module.css";
 
 type Predicate =

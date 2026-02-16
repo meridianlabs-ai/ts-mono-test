@@ -1,6 +1,5 @@
 import { skipToken, useQuery } from "@tanstack/react-query";
 import { useMemo } from "react";
-
 import { Column } from "../../../query";
 import { useApi } from "../../../state/store";
 import { TranscriptInfo } from "../../../types/api-types";

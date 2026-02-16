@@ -1,8 +1,7 @@
 import { dirname } from "@tsmono/common";
 import { VscodeTextfield } from "@vscode-elements/react-elements";
-import { FC, useState, useRef, useEffect, useMemo } from "react";
+import { FC, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-
 import { Modal } from "../../../components/Modal";
 import { AppConfig } from "../../../types/api-types";
 import { projectOrAppAliasedPath } from "../../server/useAppConfig";
@@ -11,7 +10,6 @@ import {
   hasValidationSetExtension,
   VALIDATION_SET_EXTENSIONS,
 } from "../utils";
-
 import styles from "./ValidationSetSelector.module.css";
 
 interface ValidationSetSelectorProps {

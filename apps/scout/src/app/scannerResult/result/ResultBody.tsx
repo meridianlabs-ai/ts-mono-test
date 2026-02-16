@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { FC, useCallback, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-
 import { ChatViewVirtualList } from "../../../components/chat/ChatViewVirtualList";
 import { ApplicationIcons } from "../../../components/icons";
 import { TranscriptView } from "../../../components/transcript/TranscriptView";
@@ -12,15 +11,14 @@ import {
   ColumnHeaderButton,
 } from "../../components/ColumnHeader";
 import {
-  ScanResultInputData,
   isEventInput,
   isEventsInput,
   isMessageInput,
   isMessagesInput,
   isTranscriptInput,
   ScanResultData,
+  ScanResultInputData,
 } from "../../types";
-
 import styles from "./ResultBody.module.css";
 
 export interface ResultBodyProps {

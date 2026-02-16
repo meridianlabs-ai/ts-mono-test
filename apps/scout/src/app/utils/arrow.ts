@@ -1,7 +1,6 @@
 import { asyncJsonParse } from "@tsmono/common";
 import { ColumnTable, from } from "arquero";
 import JSON5 from "json5";
-
 import { ScanResultReference, ValueType } from "../types";
 
 interface Result {

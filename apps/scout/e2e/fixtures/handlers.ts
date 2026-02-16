@@ -1,5 +1,4 @@
 import { http, HttpResponse } from "msw";
-
 import type {
   ActiveScansResponse,
   AppConfig,
@@ -10,7 +9,6 @@ import type {
   TranscriptInfo,
   TranscriptsResponse,
 } from "../../src/types/api-types";
-
 import {
   createActiveScansResponse,
   createAppConfig,
@@ -65,13 +63,13 @@ export const defaultHandlers = [
 
   http.get("/api/v2/transcripts/:dir/:id/info", () => {
     return HttpResponse.json<TranscriptInfo>(
-      createTranscriptInfo({ transcript_id: "default" }),
+      createTranscriptInfo({ transcript_id: "default" })
     );
   }),
 
   http.get("/api/v2/transcripts/:dir/:id/messages-events", () => {
     return HttpResponse.json<MessagesEventsResponse>(
-      createMessagesEventsResponse(),
+      createMessagesEventsResponse()
     );
   }),
 ];

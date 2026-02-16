@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React, { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { ErrorPanel } from "../../components/ErrorPanel";
 import { ExtendedFindProvider } from "../../components/ExtendedFindProvider";
 import { LoadingBar } from "../../components/LoadingBar";
@@ -14,7 +13,6 @@ import { useAppConfig } from "../server/useAppConfig";
 import { useScans } from "../server/useScans";
 import { getScanDisplayName } from "../utils/scan";
 import { useScansDir } from "../utils/useScansDir";
-
 import styles from "./ScanPanel.module.css";
 import { ScanPanelBody } from "./ScanPanelBody";
 import { ScanPanelTitle } from "./ScanPanelTitle";

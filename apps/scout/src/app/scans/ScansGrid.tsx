@@ -1,12 +1,10 @@
 import { toRelativePath } from "@tsmono/common";
 import { FC, useEffect, useMemo, useRef } from "react";
-
 import { ScalarValue } from "../../api/api";
 import { scanRoute } from "../../router/url";
 import { useStore } from "../../state/store";
 import type { ScanRow as ApiScanRow } from "../../types/api-types";
 import { DataGrid } from "../components/dataGrid";
-
 import {
   DEFAULT_COLUMN_ORDER,
   getScanColumns,

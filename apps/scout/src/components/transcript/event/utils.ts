@@ -1,8 +1,4 @@
-import {
-  formatDateTime,
-  formatNumber,
-  formatTime,
-} from "@tsmono/common";
+import { formatDateTime, formatNumber, formatTime } from "@tsmono/common";
 
 export const formatTiming = (timestamp: string, working_start?: number) => {
   if (working_start) {

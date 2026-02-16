@@ -1,7 +1,6 @@
 import { AsyncData, loading } from "@tsmono/common";
 import { useMemo } from "react";
 
-
 /**
  * The `useMapAsyncData` function is a custom React hook that transforms the data
  * in an `AsyncData` object or an array of `AsyncData` objects. It uses the `useMemo`

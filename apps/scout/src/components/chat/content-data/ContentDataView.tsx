@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { ContentData } from "../../../types/api-types";
 import { RecordTree } from "../../content/RecordTree";
-
 import { CompactionData, kCompactionMetadata } from "./CompactionData";
 import styles from "./ContentDataView.module.css";
 import { WebSearch } from "./WebSearch";

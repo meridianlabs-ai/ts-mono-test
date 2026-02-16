@@ -1,9 +1,7 @@
 import { clsx } from "clsx";
 import { FC, ReactNode, useRef, useState } from "react";
-
 import { ApplicationIcons } from "../../components/icons";
 import { ToolButton } from "../../components/ToolButton";
-
 import styles from "./FilterBar.module.css";
 
 export interface ColumnPickerRenderProps {

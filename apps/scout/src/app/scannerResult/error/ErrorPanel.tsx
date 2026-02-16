@@ -1,9 +1,7 @@
 import { clsx } from "clsx";
 import { FC } from "react";
-
 import { ANSIDisplay } from "../../../components/AnsiDisplay";
 import { Card, CardBody, CardHeader } from "../../../components/Card";
-
 import styles from "./ErrorPanel.module.css";
 
 interface ErrorPanelProps {

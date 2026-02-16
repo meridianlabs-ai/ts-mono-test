@@ -1,7 +1,5 @@
 import { skipToken } from "@tanstack/react-query";
-import { AsyncData } from "@tsmono/common";
-import { useAsyncDataFromQuery } from "@tsmono/common";
-
+import { AsyncData, useAsyncDataFromQuery } from "@tsmono/common";
 import { ScalarValue } from "../../api/api";
 import { Condition } from "../../query";
 import { useApi } from "../../state/store";

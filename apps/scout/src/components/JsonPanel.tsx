@@ -1,9 +1,7 @@
 import { maybeBase64 } from "@tsmono/common";
 import clsx from "clsx";
 import { CSSProperties, FC, useMemo, useRef } from "react";
-
 import "./JsonPanel.css";
-
 import { usePrismHighlight } from "./prism";
 
 interface JSONPanelProps {

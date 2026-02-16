@@ -1,12 +1,10 @@
 import { FC } from "react";
-
 import {
   ChatMessageAssistant,
   ChatMessageSystem,
   ChatMessageTool,
   ChatMessageUser,
 } from "../../types/api-types";
-
 import { MessageContent } from "./MessageContent";
 import { Citation } from "./types";
 

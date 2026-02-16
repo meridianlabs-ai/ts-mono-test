@@ -6,14 +6,12 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
-
 import {
   BatchConfig,
   CachePolicy,
   GenerateConfigInput,
   ProjectConfigInput,
 } from "../../types/api-types";
-
 import {
   KeyValueField,
   NumberField,

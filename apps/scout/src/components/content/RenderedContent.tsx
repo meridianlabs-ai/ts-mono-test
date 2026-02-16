@@ -1,9 +1,7 @@
-import { formatNumber } from "@tsmono/common";
-import { isJson } from "@tsmono/common";
+import { formatNumber, isJson } from "@tsmono/common";
 import clsx from "clsx";
 import JSON5 from "json5";
 import { FC, Fragment, isValidElement, JSX, ReactNode } from "react";
-
 import { ANSIDisplay } from "../../components/AnsiDisplay";
 import JSONPanel from "../../components/JsonPanel";
 import { MarkdownReference } from "../../components/MarkdownDivWithReferences";
@@ -11,7 +9,6 @@ import { ChatMessageRenderer } from "../chat/ChatMessageRenderer";
 import { isMessageContent, MessageContent } from "../chat/MessageContent";
 import { defaultContext } from "../chat/MessageContents";
 import { ApplicationIcons } from "../icons";
-
 import { MetaDataGrid } from "./MetaDataGrid";
 import styles from "./RenderedContent.module.css";
 import { RenderedText } from "./RenderedText";

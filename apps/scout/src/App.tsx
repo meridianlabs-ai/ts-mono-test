@@ -1,6 +1,5 @@
-import { FC, createContext, useMemo } from "react";
+import { createContext, FC, useMemo } from "react";
 import { RouterProvider } from "react-router-dom";
-
 import "prismjs";
 import "prismjs/components/prism-bash";
 import "prismjs/components/prism-clike";

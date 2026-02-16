@@ -1,26 +1,24 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { EventType } from "../../components/transcript/types";
 import {
-  Event,
+  AppConfig,
   ChatMessage,
+  Event,
   Status,
   Transcript,
-  AppConfig,
 } from "../../types/api-types";
 import { TaskName } from "../components/TaskName";
 import { projectOrAppAliasedPath } from "../server/useAppConfig";
 import {
-  ScanResultInputData,
   isEventInput,
   isEventsInput,
   isMessageInput,
   isMessagesInput,
   isTranscriptInput,
   MessageType,
+  ScanResultInputData,
 } from "../types";
-
 import styles from "./ScannerResultHeader.module.css";
 
 interface ScannerResultHeaderProps {

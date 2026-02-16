@@ -1,19 +1,17 @@
 import {
-  UseInfiniteQueryResult,
   InfiniteData,
-  useInfiniteQuery,
-  QueryKey,
   keepPreviousData,
+  QueryKey,
   skipToken,
+  useInfiniteQuery,
+  UseInfiniteQueryResult,
 } from "@tanstack/react-query";
 import { SortingState } from "@tanstack/react-table";
 import { useMemo } from "react";
-
+import { CursorType, sortingStateToOrderBy } from ".";
 import { Condition } from "../../query";
 import { useApi } from "../../state/store";
 import { TranscriptsResponse } from "../../types/api-types";
-
-import { CursorType, sortingStateToOrderBy } from ".";
 
 type ServerTranscriptsInfiniteParams = {
   location: string;

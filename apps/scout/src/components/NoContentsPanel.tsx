@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC } from "react";
-
 import { ApplicationIcons } from "./icons";
 import styles from "./NoContentsPanel.module.css";
 

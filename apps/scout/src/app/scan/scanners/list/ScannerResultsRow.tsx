@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { FC, memo } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { MarkdownReference } from "../../../../components/MarkdownDivWithReferences";
 import { useLoggingNavigate } from "../../../../debugging/navigationDebugging";
 import { scanResultRoute } from "../../../../router/url";
@@ -14,7 +13,6 @@ import { Value } from "../../../components/Value";
 import { useScanRoute } from "../../../hooks/useScanRoute";
 import { ScanResultSummary } from "../../../types";
 import { useMarkdownRefs } from "../../../utils/refs";
-
 import { GridDescriptor } from "./ScannerResultsList";
 import styles from "./ScannerResultsRow.module.css";
 

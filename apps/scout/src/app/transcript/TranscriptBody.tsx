@@ -11,7 +11,6 @@ import {
   useState,
 } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { ChatViewVirtualList } from "../../components/chat/ChatViewVirtualList";
 import { DisplayModeContext } from "../../components/content/DisplayModeContext";
 import { MetaDataGrid } from "../../components/content/MetaDataGrid";
@@ -33,7 +32,6 @@ import { useStore } from "../../state/store";
 import { Transcript } from "../../types/api-types";
 import { messagesToStr } from "../utils/messages";
 import { ValidationCaseEditor } from "../validation/components/ValidationCaseEditor";
-
 import { useTranscriptColumnFilter } from "./hooks/useTranscriptColumnFilter";
 import styles from "./TranscriptBody.module.css";
 import { TranscriptFilterPopover } from "./TranscriptFilterPopover";

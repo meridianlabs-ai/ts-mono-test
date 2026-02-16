@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 import "./ErrorPanel.css";
 import { ApplicationIcons } from "./icons";
 

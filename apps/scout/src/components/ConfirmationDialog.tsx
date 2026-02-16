@@ -1,6 +1,5 @@
 import { VscodeButton } from "@vscode-elements/react-elements";
 import { FC, ReactNode } from "react";
-
 import styles from "./ConfirmationDialog.module.css";
 import { Modal } from "./Modal";
 

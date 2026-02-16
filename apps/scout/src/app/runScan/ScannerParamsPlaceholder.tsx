@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 import styles from "./RunScanPanel.module.css";
 
 interface Props {

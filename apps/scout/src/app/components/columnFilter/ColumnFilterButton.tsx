@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { forwardRef } from "react";
-
 import { ApplicationIcons } from "../../../components/icons";
-
 import styles from "./ColumnFilterButton.module.css";
 
 export interface ColumnFilterButtonProps {

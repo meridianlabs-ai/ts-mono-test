@@ -5,7 +5,6 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useEffect, useState } from "react";
-
 import { JsonValue } from "../../../types/api-types";
 
 type TargetMode = "true" | "false" | "other" | "unset";

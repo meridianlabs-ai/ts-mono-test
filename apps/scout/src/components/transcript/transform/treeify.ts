@@ -1,15 +1,14 @@
 import { Event, SpanBeginEvent, SpanEndEvent } from "../../../types/api-types";
 import { EventNode, EventType } from "../types";
-
 import { transformTree } from "./transform";
 import {
   ACTION_BEGIN,
+  hasSpans,
   SPAN_BEGIN,
   SPAN_END,
   STEP,
   TYPE_SCORER,
   TYPE_SCORERS,
-  hasSpans,
 } from "./utils";
 
 export function treeifyEvents(events: Event[], depth: number): EventNode[] {

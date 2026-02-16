@@ -1,6 +1,5 @@
 import { FC, ReactNode } from "react";
 import { useLocation } from "react-router-dom";
-
 import { useLoggingNavigate } from "../../debugging/navigationDebugging";
 import {
   activities,
@@ -9,7 +8,6 @@ import {
 } from "../../router/activities";
 import { openRouteInNewTab } from "../../router/url";
 import { AppConfig } from "../../types/api-types";
-
 import { ActivityBar } from "./ActivityBar";
 import styles from "./ActivityBarLayout.module.css";
 import { ProjectBar } from "./ProjectBar";

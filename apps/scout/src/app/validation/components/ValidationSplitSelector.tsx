@@ -4,10 +4,8 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useMemo, useState } from "react";
-
 import { Modal } from "../../../components/Modal";
 import { useDropdownPosition } from "../../../hooks/useDropdownPosition";
-
 import styles from "./ValidationSplitSelector.module.css";
 
 interface ValidationSplitSelectorProps {

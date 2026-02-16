@@ -1,6 +1,5 @@
 import { clsx } from "clsx";
 import { FC, useCallback, useEffect, useMemo } from "react";
-
 import { ErrorPanel } from "../../components/ErrorPanel";
 import { ExtendedFindProvider } from "../../components/ExtendedFindProvider";
 import { ApplicationIcons } from "../../components/icons";
@@ -16,7 +15,6 @@ import { useScansFilterBarProps } from "../hooks/useScansFilterBarProps";
 import { useAppConfig } from "../server/useAppConfig";
 import { useScansInfinite } from "../server/useScansInfinite";
 import { useScansDir } from "../utils/useScansDir";
-
 import { SCANS_INFINITE_SCROLL_CONFIG } from "./constants";
 import { ScansFilterBar } from "./ScansFilterBar";
 import { ScansGrid } from "./ScansGrid";

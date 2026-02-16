@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC, Fragment, useMemo, useRef } from "react";
-
 import {
   ChatMessage,
   ModelCall,
@@ -14,7 +13,6 @@ import { ApplicationIcons } from "../icons";
 import { usePrismHighlight } from "../prism";
 import { PulsingDots } from "../PulsingDots";
 import { ModelUsagePanel } from "../usage/ModelUsagePanel";
-
 import { EventPanel } from "./event/EventPanel";
 import { EventSection } from "./event/EventSection";
 import { EventTimingPanel } from "./event/EventTimingPanel";

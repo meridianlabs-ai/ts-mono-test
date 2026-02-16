@@ -1,8 +1,6 @@
 import { formatDateTime, formatTime } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, Fragment } from "react";
-
-
 import styles from "./EventTimingPanel.module.css";
 
 interface EventTimingPanelProps {

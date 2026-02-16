@@ -3,7 +3,6 @@
  */
 
 import { VSCodeApi } from "@tsmono/common";
-
 import { ClientStorage } from "./api";
 
 export const createVSCodeStore = (api: VSCodeApi): ClientStorage => ({

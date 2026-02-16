@@ -1,6 +1,4 @@
-import { AsyncData } from "@tsmono/common";
-import { useAsyncDataFromQuery } from "@tsmono/common";
-
+import { AsyncData, useAsyncDataFromQuery } from "@tsmono/common";
 import { useApi } from "../../state/store";
 import { ScannerInfo } from "../../types/api-types";
 

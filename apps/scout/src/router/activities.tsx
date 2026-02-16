@@ -1,5 +1,4 @@
 import { ReactElement } from "react";
-
 import { RunScanPanel } from "../app/runScan/RunScanPanel";
 import { ScansPanel } from "../app/scans/ScansPanel";
 import { TranscriptsPanel } from "../app/transcripts/TranscriptsPanel";

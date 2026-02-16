@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-
 import type { SimpleCondition } from "../../../query/types";
 import type { FilterType } from "../../../state/store";
-
 import { useColumnFilter } from "./useColumnFilter";
 
 export interface UseColumnFilterPopoverParams {

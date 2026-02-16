@@ -6,7 +6,6 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useCallback, useMemo, useState } from "react";
-
 import { Modal } from "../../../components/Modal";
 import { useApi } from "../../../state/store";
 import { ValidationCase } from "../../../types/api-types";
@@ -24,7 +23,6 @@ import {
   getFilenameFromUri,
   isValidFilename,
 } from "../utils";
-
 import styles from "./CopyMoveCasesModal.module.css";
 
 /** Sentinel value meaning "keep each case's original split" */

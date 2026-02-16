@@ -1,5 +1,4 @@
 import { ColumnDef } from "@tanstack/react-table";
-
 import type { FilterType } from "../../state/store";
 
 /**

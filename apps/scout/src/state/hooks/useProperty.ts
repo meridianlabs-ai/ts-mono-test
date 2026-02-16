@@ -1,5 +1,4 @@
 import { useCallback, useEffect } from "react";
-
 import { useStore } from "../store";
 
 export function useProperty<T>(

@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
 import { Link } from "react-router-dom";
-
 import styles from "./NavButtons.module.css";
 
 export interface NavButton {

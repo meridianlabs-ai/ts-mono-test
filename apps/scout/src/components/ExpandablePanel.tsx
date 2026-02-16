@@ -9,9 +9,7 @@ import {
   useRef,
   useState,
 } from "react";
-
 import { useCollapsedState } from "../state/hooks/useCollapsedState";
-
 import styles from "./ExpandablePanel.module.css";
 
 interface ExpandablePanelProps {

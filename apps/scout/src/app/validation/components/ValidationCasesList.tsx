@@ -1,13 +1,11 @@
 import { VscodeButton, VscodeCheckbox } from "@vscode-elements/react-elements";
 import { CSSProperties, FC, useCallback, useMemo, useState } from "react";
-
 import { ApplicationIcons } from "../../../components/icons";
 import { Modal } from "../../../components/Modal";
 import { useStore } from "../../../state/store";
 import { TranscriptInfo, ValidationCase } from "../../../types/api-types";
 import { useTranscriptsByIds } from "../hooks/useTranscriptsByIds";
 import { extractUniqueSplits, getCaseKey, getIdText } from "../utils";
-
 import { CopyMoveCasesModal } from "./CopyMoveCasesModal";
 import { ValidationCaseCard } from "./ValidationCaseCard";
 import styles from "./ValidationCasesList.module.css";

@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
-
 import { PopOver } from "../../components/PopOver";
-
 import { useTranscriptColumnFilter } from "./hooks/useTranscriptColumnFilter";
 import styles from "./TranscriptFilterPopover.module.css";
 

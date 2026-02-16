@@ -4,7 +4,6 @@
  */
 
 import { JsonValue } from "../types/json-value";
-
 import { JsonRpcParams, kMethodHttpRequest } from "./jsonrpc";
 
 export { kMethodHttpRequest };

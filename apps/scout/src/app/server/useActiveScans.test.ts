@@ -2,12 +2,10 @@
 import { renderHook, waitFor } from "@testing-library/react";
 import { http, HttpResponse } from "msw";
 import { describe, expect, it } from "vitest";
-
 import { createActiveScanInfo } from "../../test/objectFactories";
 import { server } from "../../test/setup-msw";
 import { createTestWrapper } from "../../test/test-utils";
 import type { ActiveScansResponse } from "../../types/api-types";
-
 import { useActiveScans } from "./useActiveScans";
 
 describe("useActiveScans", () => {

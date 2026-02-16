@@ -1,5 +1,4 @@
 import { SortingState } from "@tanstack/react-table";
-
 import { OrderByModel } from "../../query";
 
 export const sortingStateToOrderBy = (sorting: SortingState): OrderByModel[] =>

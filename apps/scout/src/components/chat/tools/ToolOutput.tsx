@@ -1,12 +1,9 @@
-import { isAnsiOutput } from "@tsmono/common";
-import { isJson } from "@tsmono/common";
+import { isAnsiOutput, isJson } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { ContentImage, ContentText } from "../../../types/api-types";
 import { ANSIDisplay } from "../../AnsiDisplay";
 import { JsonMessageContent } from "../JsonMessageContent";
-
 import styles from "./ToolOutput.module.css";
 
 interface ToolOutputProps {

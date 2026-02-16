@@ -1,7 +1,6 @@
 import { skipToken } from "@tanstack/react-query";
 import clsx from "clsx";
 import { FC, useCallback, useEffect, useMemo } from "react";
-
 import { ErrorPanel } from "../../components/ErrorPanel";
 import { LoadingBar } from "../../components/LoadingBar";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
@@ -13,7 +12,6 @@ import { useTranscriptsFilterBarProps } from "../hooks/useTranscriptsFilterBarPr
 import { useAppConfig } from "../server/useAppConfig";
 import { useServerTranscriptsInfinite } from "../server/useServerTranscriptsInfinite";
 import { useTranscriptsDir } from "../utils/useTranscriptsDir";
-
 import { TRANSCRIPTS_INFINITE_SCROLL_CONFIG } from "./constants";
 import { TranscriptFilterBar } from "./TranscriptFilterBar";
 import { TranscriptsGrid } from "./TranscriptsGrid";

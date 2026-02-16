@@ -1,5 +1,4 @@
 import { FC, useEffect, useState } from "react";
-
 import { ErrorPanel } from "../../components/ErrorPanel";
 import { ApplicationIcons } from "../../components/icons";
 import { LoadingBar } from "../../components/LoadingBar";
@@ -10,7 +9,6 @@ import {
   ValidationResults,
 } from "../../types/api-types";
 import { useActiveScan } from "../server/useActiveScan";
-
 import styles from "./RunScanPanel.module.css";
 
 const formatMemory = (bytes: number): string => {

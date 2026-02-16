@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { FC, Fragment, useCallback, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { VirtuosoHandle } from "react-virtuoso";
-
 import { ApplicationIcons } from "../../../components/icons";
 import { LabeledValue } from "../../../components/LabeledValue";
 import { LiveVirtualList } from "../../../components/LiveVirtualList";
@@ -11,7 +10,6 @@ import { updateScannerParam } from "../../../router/url";
 import { useStore } from "../../../state/store";
 import { Status, ValidationResults } from "../../../types/api-types";
 import { useSelectedScanner } from "../../hooks/useSelectedScanner";
-
 import styles from "./ScannerSidebar.module.css";
 
 export const ScannerSidebar: FC<{ selectedScan: Status }> = ({

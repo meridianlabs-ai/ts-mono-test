@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { FC, ReactNode, useEffect } from "react";
-
 import { ApplicationIcons } from "../../components/icons";
-
 import styles from "./NextPreviousNav.module.css";
 
 interface NextPreviousNavProps {

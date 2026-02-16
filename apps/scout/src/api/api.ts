@@ -1,5 +1,4 @@
 import { StateStorage } from "zustand/middleware";
-
 import { ScanResultInputData } from "../app/types";
 import type { Condition, OrderByModel } from "../query";
 import {

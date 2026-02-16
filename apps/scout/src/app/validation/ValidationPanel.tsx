@@ -13,7 +13,6 @@ import {
   useMemo,
   useState,
 } from "react";
-
 import { ApplicationIcons } from "../../components/icons";
 import { Modal } from "../../components/Modal";
 import { NonIdealState } from "../../components/NonIdealState";
@@ -29,7 +28,6 @@ import {
   useValidationCases,
   useValidationSets,
 } from "../server/useValidations";
-
 import { ValidationCasesList } from "./components/ValidationCasesList";
 import { ValidationSetSelector } from "./components/ValidationSetSelector";
 import { ValidationSummary } from "./components/ValidationSummary";

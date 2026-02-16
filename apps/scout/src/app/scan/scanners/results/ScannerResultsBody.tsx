@@ -3,7 +3,6 @@ import { ColumnTable } from "arquero";
 import clsx from "clsx";
 import { FC, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-
 import { DataframeView } from "../../../../components/DataframeView";
 import { ErrorPanel } from "../../../../components/ErrorPanel";
 import { NoContentsPanel } from "../../../../components/NoContentsPanel";
@@ -15,7 +14,6 @@ import { useScanRoute } from "../../../hooks/useScanRoute";
 import { kSegmentDataframe, kSegmentList } from "../../ScanPanelBody";
 import { ScannerResultsList } from "../list/ScannerResultsList";
 import { defaultColumns } from "../types";
-
 import styles from "./ScannerResultsBody.module.css";
 
 const columnOrder = ["transcript_id", "value", "explanation", "metadata"];

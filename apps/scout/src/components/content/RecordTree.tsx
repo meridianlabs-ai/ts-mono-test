@@ -11,12 +11,10 @@ import {
   useRef,
 } from "react";
 import { Virtuoso, VirtuosoHandle } from "react-virtuoso";
-
 import { useCollapsibleIds } from "../../state/hooks/useCollapsibleIds";
 import { useVirtuosoState } from "../../state/scrolling";
 import ExpandablePanel from "../ExpandablePanel";
 import { ApplicationIcons } from "../icons";
-
 import { resolveStoreKeys } from "./record_processors/store";
 import { RecordProcessor } from "./record_processors/types";
 import styles from "./RecordTree.module.css";

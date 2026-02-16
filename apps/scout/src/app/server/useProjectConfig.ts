@@ -4,9 +4,7 @@ import {
   UseMutationResult,
   useQueryClient,
 } from "@tanstack/react-query";
-import { AsyncData } from "@tsmono/common";
-import { useAsyncDataFromQuery } from "@tsmono/common";
-
+import { AsyncData, useAsyncDataFromQuery } from "@tsmono/common";
 import { useApi } from "../../state/store";
 import { ProjectConfig, ProjectConfigInput } from "../../types/api-types";
 

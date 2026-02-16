@@ -1,5 +1,4 @@
 import { EventNode } from "../types";
-
 import {
   SPAN_BEGIN,
   STATE,

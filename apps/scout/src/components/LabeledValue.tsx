@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { CSSProperties, FC, ReactNode } from "react";
-
 import styles from "./LabeledValue.module.css";
 
 interface LabeledValueProps {

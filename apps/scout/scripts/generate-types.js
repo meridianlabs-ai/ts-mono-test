@@ -37,11 +37,11 @@ const importDecl = ts.factory.createImportDeclaration(
       ts.factory.createImportSpecifier(
         false,
         undefined,
-        ts.factory.createIdentifier("JsonValue"),
+        ts.factory.createIdentifier("JsonValue")
       ),
-    ]),
+    ])
   ),
-  ts.factory.createStringLiteral("./json-value"),
+  ts.factory.createStringLiteral("./json-value")
 );
 
 const HEADER = `/**

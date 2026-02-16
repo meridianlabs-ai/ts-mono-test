@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC, useMemo } from "react";
-
 import {
   ContentAudio,
   ContentData,
@@ -14,7 +13,6 @@ import ExpandablePanel from "../../ExpandablePanel";
 import { MessageContent } from "../MessageContent";
 import { defaultContext } from "../MessageContents";
 import { ContentTool } from "../types";
-
 import { getCustomToolView } from "./customToolRendering";
 import styles from "./ToolCallView.module.css";
 import { ToolInput } from "./ToolInput";

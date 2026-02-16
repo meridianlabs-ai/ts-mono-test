@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { FC } from "react";
-
 import styles from "./PulsingDots.module.css";
 
 interface PulsingDotsProps {

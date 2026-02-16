@@ -1,12 +1,10 @@
 // @vitest-environment jsdom
-import { renderHook, waitFor, act } from "@testing-library/react";
+import { act, renderHook, waitFor } from "@testing-library/react";
 import { http, HttpResponse } from "msw";
 import { describe, expect, it } from "vitest";
-
 import { server } from "../../test/setup-msw";
 import { createTestWrapper } from "../../test/test-utils";
 import type { ProjectConfig } from "../../types/api-types";
-
 import { useProjectConfig, useUpdateProjectConfig } from "./useProjectConfig";
 
 const mockConfig = {

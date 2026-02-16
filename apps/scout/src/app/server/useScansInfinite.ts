@@ -1,18 +1,16 @@
 import {
-  UseInfiniteQueryResult,
   InfiniteData,
-  useInfiniteQuery,
-  QueryKey,
   keepPreviousData,
+  QueryKey,
+  useInfiniteQuery,
+  UseInfiniteQueryResult,
 } from "@tanstack/react-query";
 import { SortingState } from "@tanstack/react-table";
 import { useMemo } from "react";
-
+import { CursorType, sortingStateToOrderBy } from ".";
 import { Condition } from "../../query";
 import { useApi } from "../../state/store";
 import { ScansResponse } from "../../types/api-types";
-
-import { CursorType, sortingStateToOrderBy } from ".";
 
 export const useScansInfinite = (
   scansDir: string,

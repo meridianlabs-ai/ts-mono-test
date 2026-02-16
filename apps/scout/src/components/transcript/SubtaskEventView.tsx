@@ -1,10 +1,8 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
-
 import { SubtaskEvent } from "../../types/api-types";
 import { MetaDataGrid } from "../content/MetaDataGrid";
 import { ApplicationIcons } from "../icons";
-
 import { EventPanel } from "./event/EventPanel";
 import { formatTiming, formatTitle } from "./event/utils";
 import styles from "./SubtaskEventView.module.css";

@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-
 import { resolveAttachments } from "./attachmentsHelpers";
 
 const attachments: Record<string, string> = {

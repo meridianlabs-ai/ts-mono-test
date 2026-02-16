@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { type PropsWithChildren } from "react";
-
 import { apiScoutServer } from "../api/api-scout-server";
 import { ApiProvider } from "../state/store";
 

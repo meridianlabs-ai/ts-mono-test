@@ -1,12 +1,12 @@
 import {
-  tableFromIPC,
-  tableToIPC,
   Codec,
   compressionRegistry,
   CompressionType,
+  tableFromIPC,
+  tableToIPC,
 } from "apache-arrow";
 import type { ColumnTable } from "arquero";
-import { escape, fromArrow, table as arqueroTable } from "arquero";
+import { table as arqueroTable, escape, fromArrow } from "arquero";
 import * as lz4js from "lz4js";
 
 export const decodeArrowBase64 = (base64: string) => {

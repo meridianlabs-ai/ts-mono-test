@@ -1,5 +1,4 @@
 import { Content } from "../../types/api-types";
-
 import { ResolvedMessage } from "./messages";
 
 /**

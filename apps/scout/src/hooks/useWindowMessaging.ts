@@ -1,7 +1,6 @@
 import { basename } from "@tsmono/common";
 import JSON5 from "json5";
 import { useEffect, useMemo } from "react";
-
 import { useAppConfig } from "../app/server/useAppConfig";
 import { useLoggingNavigate } from "../debugging/navigationDebugging";
 import { scanRoute } from "../router/url";
