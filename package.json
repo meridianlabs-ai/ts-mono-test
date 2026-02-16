@@ -12,7 +12,8 @@
     "typecheck": "turbo run typecheck",
     "check": "turbo run check",
     "manypkg:check": "manypkg check",
-    "manypkg:fix": "manypkg fix"
+    "manypkg:fix": "manypkg fix",
+    "test": "turbo run test"
   },
   "dependencies": {
     "@manypkg/cli": "^0.22.0",

@@ -34,6 +34,7 @@ All commands run from the repo root.
 | `pnpm build` | Build all packages (via Turborepo) |
 | `pnpm lint` | Lint all packages |
 | `pnpm typecheck` | Type-check all packages |
+| `pnpm test` | Run all tests (via Turborepo) |
 | `pnpm check` | Lint + typecheck |
 | `pnpm manypkg:check` | Validate workspace consistency |
 
@@ -49,6 +50,12 @@ All commands run from the repo root.
   `parserOptions.projectService` and `tsconfigRootDir`
 - **TSConfig**: Consumers extend `@tsmono/tsconfig/base.json` or
   `@tsmono/tsconfig/react.json`
+
+## Migration Notes
+
+This is a trial repo. [MIGRATION_NOTES.md](MIGRATION_NOTES.md) tracks source
+changes and gotchas that must be applied when creating the real monorepo. Keep
+it up to date as you discover new issues.
 
 ## What Came From Where
 
