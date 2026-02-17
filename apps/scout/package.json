@@ -89,6 +89,7 @@
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.13.12",
     "@tsmono/common": "workspace:*",
+    "@tsmono/react": "workspace:*",
     "@vscode-elements/react-elements": "^2.4.0",
     "ag-grid-community": "^34.3.1",
     "ag-grid-react": "^34.3.1",

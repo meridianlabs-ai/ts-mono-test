@@ -41,6 +41,9 @@ importers:
       '@tsmono/common':
         specifier: workspace:*
         version: link:../../packages/common
+      '@tsmono/react':
+        specifier: workspace:*
+        version: link:../../packages/react
       '@vscode-elements/react-elements':
         specifier: ^2.4.0
         version: 2.4.0(@types/react@19.2.14)(@vscode/codicons@0.0.44)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -265,6 +268,43 @@ importers:
       react-router-dom:
         specifier: ^7.9.4
         version: 7.13.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+      typescript-eslint:
+        specifier: ^8.50.0
+        version: 8.56.0(eslint@9.39.2)(typescript@5.9.3)
+      vitest:
+        specifier: ^4.0.16
+        version: 4.0.18(@types/node@24.10.13)(jsdom@27.4.0)(less@4.5.1)(msw@2.12.10(@types/node@24.10.13)(typescript@5.9.3))(sass@1.97.3)(stylus@0.62.0)
+
+  packages/react:
+    dependencies:
+      '@tsmono/common':
+        specifier: workspace:*
+        version: link:../common
+    devDependencies:
+      '@testing-library/react':
+        specifier: ^16.3.1
+        version: 16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@tsmono/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint-config
+      '@tsmono/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/react':
+        specifier: ^19.2.7
+        version: 19.2.14
+      eslint:
+        specifier: ^9.39.2
+        version: 9.39.2
+      jsdom:
+        specifier: ^27.3.0
+        version: 27.4.0
+      react:
+        specifier: ^19.2.3
+        version: 19.2.4
       typescript:
         specifier: ^5.9.3
         version: 5.9.3

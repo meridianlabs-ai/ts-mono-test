@@ -10,43 +10,6 @@ import { ActivityBarLayout } from "./app/components/ActivityBarLayout";
 import { useAppConfig } from "./app/server/useAppConfig";
 import { FindBand } from "./components/FindBand";
 import { PulsingDots } from "./components/PulsingDots";
-
-const ProjectPanel = lazy(() =>
-  import("./app/project/ProjectPanel").then((m) => ({
-    default: m.ProjectPanel,
-  })),
-);
-const RunScanPanel = lazy(() =>
-  import("./app/runScan/RunScanPanel").then((m) => ({
-    default: m.RunScanPanel,
-  })),
-);
-const ScanPanel = lazy(() =>
-  import("./app/scan/ScanPanel").then((m) => ({ default: m.ScanPanel })),
-);
-const ScannerResultPanel = lazy(() =>
-  import("./app/scannerResult/ScannerResultPanel").then((m) => ({
-    default: m.ScannerResultPanel,
-  })),
-);
-const ScansPanel = lazy(() =>
-  import("./app/scans/ScansPanel").then((m) => ({ default: m.ScansPanel })),
-);
-const TranscriptPanel = lazy(() =>
-  import("./app/transcript/TranscriptPanel").then((m) => ({
-    default: m.TranscriptPanel,
-  })),
-);
-const TranscriptsPanel = lazy(() =>
-  import("./app/transcripts/TranscriptsPanel").then((m) => ({
-    default: m.TranscriptsPanel,
-  })),
-);
-const ValidationPanel = lazy(() =>
-  import("./app/validation/ValidationPanel").then((m) => ({
-    default: m.ValidationPanel,
-  })),
-);
 import {
   LoggingNavigate,
   useLoggingNavigate,
@@ -69,6 +32,43 @@ import {
 } from "./router/url";
 import { useStore } from "./state/store";
 import { AppConfig } from "./types/api-types";
+
+const ProjectPanel = lazy(() =>
+  import("./app/project/ProjectPanel").then((m) => ({
+    default: m.ProjectPanel,
+  }))
+);
+const RunScanPanel = lazy(() =>
+  import("./app/runScan/RunScanPanel").then((m) => ({
+    default: m.RunScanPanel,
+  }))
+);
+const ScanPanel = lazy(() =>
+  import("./app/scan/ScanPanel").then((m) => ({ default: m.ScanPanel }))
+);
+const ScannerResultPanel = lazy(() =>
+  import("./app/scannerResult/ScannerResultPanel").then((m) => ({
+    default: m.ScannerResultPanel,
+  }))
+);
+const ScansPanel = lazy(() =>
+  import("./app/scans/ScansPanel").then((m) => ({ default: m.ScansPanel }))
+);
+const TranscriptPanel = lazy(() =>
+  import("./app/transcript/TranscriptPanel").then((m) => ({
+    default: m.TranscriptPanel,
+  }))
+);
+const TranscriptsPanel = lazy(() =>
+  import("./app/transcripts/TranscriptsPanel").then((m) => ({
+    default: m.TranscriptsPanel,
+  }))
+);
+const ValidationPanel = lazy(() =>
+  import("./app/validation/ValidationPanel").then((m) => ({
+    default: m.ValidationPanel,
+  }))
+);
 
 export interface AppRouterConfig {
   mode: "scans" | "workbench";
