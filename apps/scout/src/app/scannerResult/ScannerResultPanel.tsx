@@ -3,6 +3,7 @@ import { VscodeSplitLayout } from "@vscode-elements/react-elements";
 import { clsx } from "clsx";
 import { FC, ReactNode, useCallback, useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
+
 import { ExtendedFindProvider } from "../../components/ExtendedFindProvider";
 import { ApplicationIcons } from "../../components/icons";
 import JSONPanel from "../../components/JsonPanel";

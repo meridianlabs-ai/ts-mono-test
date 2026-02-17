@@ -1,10 +1,12 @@
 import { skipToken } from "@tanstack/react-query";
+import { ColumnTable } from "arquero";
+
 import {
   AsyncData,
   decodeArrowBytes,
   useAsyncDataFromQuery,
 } from "@tsmono/common";
-import { ColumnTable } from "arquero";
+
 import { useApi } from "../../state/store";
 import { expandResultsetRows } from "../utils/arrow";
 

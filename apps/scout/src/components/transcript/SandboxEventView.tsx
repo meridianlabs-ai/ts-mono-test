@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
+
 import { SandboxEvent } from "../../types/api-types";
 import { MetaDataGrid } from "../content/MetaDataGrid";
 import { RenderedContent } from "../content/RenderedContent";

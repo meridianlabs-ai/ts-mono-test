@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
+
 import { EventType } from "../../components/transcript/types";
 import {
   AppConfig,

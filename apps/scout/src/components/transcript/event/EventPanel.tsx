@@ -7,6 +7,7 @@ import {
   useCallback,
   useState,
 } from "react";
+
 import { useTranscriptNavigation } from "../../../app/transcript/hooks/useTranscriptNavigation";
 import { isHostedEnvironment } from "../../../router/url";
 import { useProperty } from "../../../state/hooks/useProperty";

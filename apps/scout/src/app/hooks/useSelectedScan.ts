@@ -1,6 +1,8 @@
 import { skipToken } from "@tanstack/react-query";
-import { AsyncData } from "@tsmono/common";
 import { useEffect } from "react";
+
+import { AsyncData } from "@tsmono/common";
+
 import { useStore } from "../../state/store";
 import { Status } from "../../types/api-types";
 import { useScan } from "../server/useScan";

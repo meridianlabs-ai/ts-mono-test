@@ -1,6 +1,8 @@
-import { formatNumber } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
+
+import { formatNumber } from "@tsmono/common";
+
 import styles from "./Footer.module.css";
 import { Pager } from "./Pager";
 

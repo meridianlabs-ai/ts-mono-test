@@ -9,6 +9,7 @@ import {
   useRef,
 } from "react";
 import { Virtuoso, VirtuosoHandle } from "react-virtuoso";
+
 import { useTranscriptNavigation } from "../../../app/transcript/hooks/useTranscriptNavigation";
 import { useScrollTrack, useVirtuosoState } from "../../../state/scrolling";
 import { useStore } from "../../../state/store";

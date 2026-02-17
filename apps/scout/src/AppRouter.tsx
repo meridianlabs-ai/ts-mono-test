@@ -5,6 +5,7 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
+
 import { ActivityBarLayout } from "./app/components/ActivityBarLayout";
 import { ProjectPanel } from "./app/project/ProjectPanel";
 import { RunScanPanel } from "./app/runScan/RunScanPanel";

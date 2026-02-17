@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { ChangeEvent, FC, useCallback } from "react";
+
 import { useStore } from "../../../../state/store";
 import styles from "./ScannerResultsFilter.module.css";
 

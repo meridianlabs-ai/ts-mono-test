@@ -1,4 +1,6 @@
 import { ColumnDef } from "@tanstack/react-table";
+import clsx from "clsx";
+
 import {
   formatNumber,
   formatPrettyDecimal,
@@ -6,7 +8,7 @@ import {
   printArray,
   printObject,
 } from "@tsmono/common";
-import clsx from "clsx";
+
 import { ApplicationIcons } from "../../components/icons";
 import { FilterType } from "../../state/store";
 import { TranscriptInfo } from "../../types/api-types";

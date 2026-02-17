@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from "react";
+
 import { PopOver } from "../../components/PopOver";
 import styles from "./EditableText.module.css";
 

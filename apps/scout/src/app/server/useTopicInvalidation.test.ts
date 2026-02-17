@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { renderHook, waitFor } from "@testing-library/react";
 import { sse } from "msw";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+
 import { server } from "../../test/setup-msw";
 import { createTestWrapper } from "../../test/test-utils";
 import { useTopicInvalidation } from "./useTopicInvalidation";

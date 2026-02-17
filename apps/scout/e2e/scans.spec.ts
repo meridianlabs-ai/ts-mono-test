@@ -1,4 +1,5 @@
 import { http, HttpResponse } from "msw";
+
 import type { ScansResponse } from "../src/types/api-types";
 import { expect, test } from "./fixtures/app";
 import { createScanRow, createScansResponse } from "./fixtures/test-data";

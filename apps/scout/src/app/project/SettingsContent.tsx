@@ -1,4 +1,3 @@
-import { STABLE_EMPTY_OBJECT } from "@tsmono/common";
 import {
   VscodeCheckbox,
   VscodeFormHelper,
@@ -6,6 +5,9 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
+
+import { STABLE_EMPTY_OBJECT } from "@tsmono/common";
+
 import {
   BatchConfig,
   CachePolicy,

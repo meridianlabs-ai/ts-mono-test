@@ -1,4 +1,5 @@
 import { FC, useMemo } from "react";
+
 import { ValidationCase } from "../../../types/api-types";
 import styles from "./ValidationSummary.module.css";
 

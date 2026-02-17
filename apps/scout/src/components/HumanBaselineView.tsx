@@ -1,7 +1,11 @@
-import { formatDateTime, formatTime } from "@tsmono/common";
 import { FC, ReactNode, useEffect } from "react";
+
+import { formatDateTime, formatTime } from "@tsmono/common";
+
 import { AsciinemaPlayer } from "./AsciinemaPlayer";
+
 import "./HumanBaselineView.css";
+
 import { LightboxCarousel } from "./LightboxCarousel";
 
 export interface SessionLog {

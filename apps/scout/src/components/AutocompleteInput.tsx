@@ -10,6 +10,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+
 import styles from "./AutocompleteInput.module.css";
 
 export interface AutocompleteInputProps {

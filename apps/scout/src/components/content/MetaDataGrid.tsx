@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { CSSProperties, FC, Fragment } from "react";
+
 import { MarkdownReference } from "../MarkdownDivWithReferences";
 import styles from "./MetadataGrid.module.css";
 import { RenderedContent } from "./RenderedContent";

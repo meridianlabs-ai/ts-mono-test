@@ -28,15 +28,15 @@ tsmono/
 
 All commands run from the repo root.
 
-| Command | Description |
-|---------|-------------|
-| `pnpm install` | Install all workspace dependencies |
-| `pnpm build` | Build all packages (via Turborepo) |
-| `pnpm lint` | Lint all packages |
-| `pnpm typecheck` | Type-check all packages |
-| `pnpm test` | Run all tests (via Turborepo) |
-| `pnpm check` | Lint + typecheck |
-| `pnpm manypkg:check` | Validate workspace consistency |
+| Command              | Description                        |
+| -------------------- | ---------------------------------- |
+| `pnpm install`       | Install all workspace dependencies |
+| `pnpm build`         | Build all packages (via Turborepo) |
+| `pnpm lint`          | Lint all packages                  |
+| `pnpm typecheck`     | Type-check all packages            |
+| `pnpm test`          | Run all tests (via Turborepo)      |
+| `pnpm check`         | Lint + typecheck                   |
+| `pnpm manypkg:check` | Validate workspace consistency     |
 
 ## Key Conventions
 

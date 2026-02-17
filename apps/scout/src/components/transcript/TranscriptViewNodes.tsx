@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { FC, useMemo, useRef } from "react";
 import { VirtuosoHandle } from "react-virtuoso";
+
 import { useStore } from "../../state/store";
 import styles from "./TranscriptViewNodes.module.css";
 import { TranscriptVirtualList } from "./TranscriptVirtualList";

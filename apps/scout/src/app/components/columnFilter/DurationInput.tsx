@@ -1,5 +1,7 @@
-import { formatTime } from "@tsmono/common";
 import { ChangeEvent, FC, useMemo } from "react";
+
+import { formatTime } from "@tsmono/common";
+
 import styles from "./ColumnFilterEditor.module.css";
 
 export interface DurationInputProps {

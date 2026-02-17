@@ -3,6 +3,7 @@ import {
   VscodeSingleSelect,
 } from "@vscode-elements/react-elements";
 import { ChangeEvent, FC, useMemo } from "react";
+
 import { ApplicationIcons } from "../../../components/icons";
 import { TextInput } from "../../../components/TextInput";
 import { ValidationCase } from "../../../types/api-types";

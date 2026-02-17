@@ -6,6 +6,7 @@ import {
   VscodeTextarea,
 } from "@vscode-elements/react-elements";
 import { FC } from "react";
+
 import styles from "./RunScanPanel.module.css";
 
 function getInputValue(e: Event): string {

@@ -1,8 +1,10 @@
-import { formatPercent, formatPrettyDecimal } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, Fragment, useCallback, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { VirtuosoHandle } from "react-virtuoso";
+
+import { formatPercent, formatPrettyDecimal } from "@tsmono/common";
+
 import { ApplicationIcons } from "../../../components/icons";
 import { LabeledValue } from "../../../components/LabeledValue";
 import { LiveVirtualList } from "../../../components/LiveVirtualList";

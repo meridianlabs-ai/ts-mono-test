@@ -4,6 +4,7 @@
  */
 
 import { ColumnSizingState } from "@tanstack/react-table";
+
 import { BaseColumnMeta, ExtendedColumnDef } from "../columnTypes";
 
 /**

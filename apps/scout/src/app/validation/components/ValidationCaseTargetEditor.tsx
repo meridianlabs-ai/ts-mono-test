@@ -1,10 +1,12 @@
-import { useDebouncedCallback } from "@tsmono/common";
 import {
   VscodeRadio,
   VscodeRadioGroup,
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useEffect, useState } from "react";
+
+import { useDebouncedCallback } from "@tsmono/common";
+
 import { JsonValue } from "../../../types/api-types";
 
 type TargetMode = "true" | "false" | "other" | "unset";

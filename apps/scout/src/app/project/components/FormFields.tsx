@@ -7,6 +7,7 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, ReactNode, useEffect, useState } from "react";
+
 import styles from "../ProjectPanel.module.css";
 
 // Helper to extract input value with proper typing

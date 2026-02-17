@@ -10,6 +10,7 @@ import {
   useRef,
 } from "react";
 import { ContextProp, ItemProps, VirtuosoHandle } from "react-virtuoso";
+
 import { ChatMessage } from "../../types/api-types";
 import { LiveVirtualList } from "../LiveVirtualList";
 import { ChatMessageRow } from "./ChatMessageRow";

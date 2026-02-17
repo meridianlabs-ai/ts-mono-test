@@ -1,6 +1,8 @@
-import { formatDateTime } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, useMemo } from "react";
+
+import { formatDateTime } from "@tsmono/common";
+
 import { SpanBeginEvent } from "../../types/api-types";
 import { EventPanel } from "./event/EventPanel";
 import { kSandboxSignalName } from "./transform/fixups";

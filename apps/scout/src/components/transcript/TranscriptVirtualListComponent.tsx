@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { FC, RefObject, useCallback, useMemo } from "react";
 import { VirtuosoHandle } from "react-virtuoso";
+
 import { LiveVirtualList } from "../LiveVirtualList";
 import { eventSearchText } from "./eventSearchText";
 import { RenderedEventNode } from "./TranscriptVirtualList";

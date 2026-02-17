@@ -1,5 +1,7 @@
-import { isUri, prettyDirUri } from "@tsmono/common";
 import { FC } from "react";
+
+import { isUri, prettyDirUri } from "@tsmono/common";
+
 import { EditableText } from "./EditableText";
 
 interface EditablePathProps {

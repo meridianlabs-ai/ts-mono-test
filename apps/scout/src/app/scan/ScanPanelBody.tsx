@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+
 import { GRID_STATE_NAME } from "../../components/DataframeView";
 import { ApplicationIcons } from "../../components/icons";
 import JSONPanel from "../../components/JsonPanel";

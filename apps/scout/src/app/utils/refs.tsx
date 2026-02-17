@@ -1,5 +1,6 @@
 import { ReactNode, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
+
 import { ChatView } from "../../components/chat/ChatView";
 import { MarkdownReference } from "../../components/MarkdownDivWithReferences";
 import { TranscriptView } from "../../components/transcript/TranscriptView";

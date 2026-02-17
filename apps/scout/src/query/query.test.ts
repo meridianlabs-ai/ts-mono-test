@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { transcriptColumns } from "./index";
 import type { ConditionModel } from "./types";
 

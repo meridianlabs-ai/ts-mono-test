@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
+
 import { ScanResultData, ScanResultInputData } from "../../types";
 import { ResultBody } from "./ResultBody";
 import styles from "./ResultPanel.module.css";

@@ -5,6 +5,7 @@ import {
   VscodeSingleSelect,
 } from "@vscode-elements/react-elements";
 import { FC, useState } from "react";
+
 import { ApplicationIcons } from "../../components/icons";
 import { ScansNavbar } from "../components/ScansNavbar";
 import { TranscriptsNavbar } from "../components/TranscriptsNavbar";

@@ -7,6 +7,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+
 import openapiTS, { astToString } from "openapi-typescript";
 import ts from "typescript";
 

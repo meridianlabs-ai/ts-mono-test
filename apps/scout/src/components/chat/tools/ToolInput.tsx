@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, Ref, useRef } from "react";
+
 import { ToolCallContent } from "../../../types/api-types";
 import { RenderedText } from "../../content/RenderedText";
 import { usePrismHighlight } from "../../prism";

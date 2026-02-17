@@ -10,8 +10,8 @@ React Query's `queryClient.setQueryData()` and `getQueryData()` don't inherently
 
 ```typescript
 // No compile-time error, but runtime disaster
-queryClient.setQueryData(["scan", dir, path], scanRowData);  // ScanRow
-const data = queryClient.getQueryData<Status>(["scan", dir, path]);  // Expects Status
+queryClient.setQueryData(["scan", dir, path], scanRowData); // ScanRow
+const data = queryClient.getQueryData<Status>(["scan", dir, path]); // Expects Status
 ```
 
 ### The Solution: DataTag
@@ -21,7 +21,11 @@ React Query v5 introduced `queryOptions()` which brands the query key with a `Da
 ```typescript
 import { queryOptions } from "@tanstack/react-query";
 
-export const scanDetailOptions = (api: ScanApi, scansDir: string, scanPath: string) =>
+export const scanDetailOptions = (
+  api: ScanApi,
+  scansDir: string,
+  scanPath: string
+) =>
   queryOptions({
     queryKey: ["scan", scansDir, scanPath] as const,
     queryFn: (): Promise<Status> => api.getScan(scansDir, scanPath),
@@ -95,20 +99,18 @@ export const useScan = (
   return useAsyncDataFromQuery({
     queryKey:
       params === skipToken
-        ? [skipToken]  // All disabled queries share this key
+        ? [skipToken] // All disabled queries share this key
         : ["scan", params.scansDir, params.scanPath],
     queryFn:
       params === skipToken
-        ? skipToken  // Query won't execute
+        ? skipToken // Query won't execute
         : () => api.getScan(params.scansDir, params.scanPath),
     staleTime: 10000,
   });
 };
 
 // Usage: query is disabled until scanPath is available
-const { data } = useScan(
-  scanPath ? { scansDir, scanPath } : skipToken
-);
+const { data } = useScan(scanPath ? { scansDir, scanPath } : skipToken);
 ```
 
 ## References

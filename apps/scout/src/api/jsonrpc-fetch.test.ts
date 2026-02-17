@@ -1,5 +1,6 @@
 // @vitest-environment jsdom
 import { describe, expect, it, vi } from "vitest";
+
 import type { HttpProxyRequest, HttpProxyResponse } from "./jsonrpc-fetch";
 import { createJsonRpcFetch, kMethodHttpRequest } from "./jsonrpc-fetch";
 

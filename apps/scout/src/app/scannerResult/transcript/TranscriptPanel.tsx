@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, useRef } from "react";
+
 import { TranscriptView } from "../../../components/transcript/TranscriptView";
 import { EventNode, EventType } from "../../../components/transcript/types";
 import { ScanResultData } from "../../types";

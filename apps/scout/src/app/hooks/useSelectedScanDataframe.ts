@@ -1,6 +1,8 @@
 import { skipToken } from "@tanstack/react-query";
-import { AsyncData } from "@tsmono/common";
 import { ColumnTable } from "arquero";
+
+import { AsyncData } from "@tsmono/common";
+
 import { useScanDataframe } from "../server/useScanDataframe";
 import { useScanRoute } from "./useScanRoute";
 import { useSelectedScanner } from "./useSelectedScanner";

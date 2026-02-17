@@ -1,4 +1,5 @@
 import { FC, useCallback } from "react";
+
 import { ScalarValue } from "../../api/api";
 import { ScansTableState, useStore } from "../../state/store";
 import { useAddFilterPopover } from "../components/columnFilter";

@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC } from "react";
+
 import { ApplicationIcons } from "../../components/icons";
 import styles from "./Error.module.css";
 

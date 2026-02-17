@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { toRelativePath } from "./path";
 
 describe("toRelativePath", () => {

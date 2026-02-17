@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { JSX, useState } from "react";
+
 import styles from "./CopyButton.module.css";
 import { ApplicationIcons } from "./icons";
 

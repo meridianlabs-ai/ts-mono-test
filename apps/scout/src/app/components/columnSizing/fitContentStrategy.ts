@@ -3,6 +3,7 @@
  */
 
 import { ColumnSizingState } from "@tanstack/react-table";
+
 import { clampSize, DEFAULT_SIZE, getColumnId, SizingStrategy } from "./types";
 
 /**

@@ -1,5 +1,6 @@
-import baseConfig from "@tsmono/eslint-config/base";
 import tseslint from "typescript-eslint";
+
+import baseConfig from "@tsmono/eslint-config/base";
 
 export default tseslint.config(
   {

@@ -1,4 +1,3 @@
-import { useResizeObserver } from "@tsmono/common";
 import clsx from "clsx";
 import {
   CSSProperties,
@@ -9,6 +8,9 @@ import {
   useRef,
   useState,
 } from "react";
+
+import { useResizeObserver } from "@tsmono/common";
+
 import { useCollapsedState } from "../state/hooks/useCollapsedState";
 import styles from "./ExpandablePanel.module.css";
 

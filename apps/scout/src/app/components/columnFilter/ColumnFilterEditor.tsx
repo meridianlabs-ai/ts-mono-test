@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { ChangeEvent, FC, KeyboardEvent, useCallback } from "react";
+
 import { ScalarValue } from "../../../api/api";
 import { AutocompleteInput } from "../../../components/AutocompleteInput";
 import type { OperatorModel } from "../../../query";

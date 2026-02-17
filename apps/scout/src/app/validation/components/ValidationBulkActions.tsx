@@ -5,6 +5,7 @@ import {
   VscodeTextfield,
 } from "@vscode-elements/react-elements";
 import { FC, useMemo, useState } from "react";
+
 import { Modal } from "../../../components/Modal";
 import { ValidationCase } from "../../../types/api-types";
 import { extractUniqueSplits } from "../utils";

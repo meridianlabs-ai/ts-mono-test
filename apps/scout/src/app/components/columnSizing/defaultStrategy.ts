@@ -3,6 +3,7 @@
  */
 
 import { ColumnSizingState } from "@tanstack/react-table";
+
 import { getColumnId, SizingStrategy } from "./types";
 
 export const defaultStrategy: SizingStrategy = {

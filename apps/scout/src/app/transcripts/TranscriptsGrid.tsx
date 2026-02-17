@@ -1,4 +1,5 @@
 import { FC, useEffect, useMemo, useRef } from "react";
+
 import { ScalarValue } from "../../api/api";
 import { transcriptRoute } from "../../router/url";
 import { useStore } from "../../state/store";

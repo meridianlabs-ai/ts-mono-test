@@ -1,7 +1,9 @@
 // @ts-check
-import { formatDateTime, toArray } from "@tsmono/common";
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
+
+import { formatDateTime, toArray } from "@tsmono/common";
+
 import { ChatMessage, SampleInitEvent } from "../../types/api-types";
 import { ChatView } from "../chat/ChatView";
 import { MetaDataGrid } from "../content/MetaDataGrid";

@@ -3,6 +3,7 @@
 ## Prefer Integration Tests
 
 <!-- cSpell:ignore Dodds -->
+
 ["Write tests, not too many, mostly integration."](https://kentcdodds.com/blog/write-tests) — Kent C. Dodds
 
 Integration tests exercise multiple units together and minimize mocking. This gives higher confidence per test — a single test that runs through the hook, React Query, and the API layer catches wiring bugs that isolated unit tests miss. Mocking internal modules (e.g., `vi.mock()`) couples tests to implementation details.
@@ -23,9 +24,9 @@ http.put("/api/v2/project/config", async ({ request }) => {
 expect(capturedHeaders?.get("If-Match")).toBe('"v1"');
 ```
 
-| File | Purpose |
-|------|---------|
-| `src/test/setup-msw.ts` | Server lifecycle — `beforeAll`/`afterEach`/`afterAll` |
+| File                      | Purpose                                                    |
+| ------------------------- | ---------------------------------------------------------- |
+| `src/test/setup-msw.ts`   | Server lifecycle — `beforeAll`/`afterEach`/`afterAll`      |
 | `src/test/test-utils.tsx` | `createTestWrapper()` — provides QueryClient + ApiProvider |
 
 **Setup**: MSW runs automatically via `vitest.config.ts` `setupFiles`. No per-test setup needed.
@@ -33,7 +34,6 @@ expect(capturedHeaders?.get("If-Match")).toBe('"v1"');
 **Config**: `onUnhandledRequest: "error"` — any fetch not handled by a test handler fails the test. QueryClient uses `retry: false`, `gcTime: 0` for deterministic behavior.
 
 **Collapsed group suppression**: Node has no concept of `console.groupCollapsed` — it prints everything. `setup-msw.ts` replicates browser behavior by suppressing `console.log` calls inside collapsed groups. This quiets MSW's SSE handler (which wraps all logging in `groupCollapsed`), but applies to any code using collapsed groups. Top-level `console.log` is unaffected.
-
 
 ### Type-check mock response data
 
@@ -43,7 +43,7 @@ Always pass the response type to `HttpResponse.json<T>()`. Without it, mock data
 http.get("/api/v2/scans/active", () =>
   HttpResponse.json<ActiveScansResponse>({
     items: { "scan-123": scanInfo },
-  }),
+  })
 );
 ```
 
@@ -52,6 +52,7 @@ http.get("/api/v2/scans/active", () =>
 ### Hooks
 
 **Shared QueryClient across hooks**: Pass the same `wrapper` to multiple `renderHook` calls.
+
 ```typescript
 const wrapper = createTestWrapper();
 const { result: queryResult } = renderHook(() => useQuery(...), { wrapper });
@@ -59,6 +60,7 @@ const { result: mutationResult } = renderHook(() => useMutation(...), { wrapper 
 ```
 
 **skipToken**: Verify the query stays in loading state and no request is made.
+
 ```typescript
 server.use(http.get("/api/v2/endpoint", () => { requestMade = true; ... }));
 renderHook(() => useHook(skipToken), { wrapper: createTestWrapper() });

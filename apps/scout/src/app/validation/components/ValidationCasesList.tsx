@@ -1,5 +1,6 @@
 import { VscodeButton, VscodeCheckbox } from "@vscode-elements/react-elements";
 import { CSSProperties, FC, useCallback, useMemo, useState } from "react";
+
 import { ApplicationIcons } from "../../../components/icons";
 import { Modal } from "../../../components/Modal";
 import { useStore } from "../../../state/store";

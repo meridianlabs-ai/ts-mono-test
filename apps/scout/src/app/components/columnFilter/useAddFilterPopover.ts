@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+
 import type { OperatorModel } from "../../../query";
 import type { ColumnFilter } from "../../../state/store";
 import type { AvailableColumn } from "./ColumnFilterEditor";

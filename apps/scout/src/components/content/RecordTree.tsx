@@ -11,6 +11,7 @@ import {
   useRef,
 } from "react";
 import { Virtuoso, VirtuosoHandle } from "react-virtuoso";
+
 import { useCollapsibleIds } from "../../state/hooks/useCollapsibleIds";
 import { useVirtuosoState } from "../../state/scrolling";
 import ExpandablePanel from "../ExpandablePanel";

@@ -1,5 +1,6 @@
 import { skipToken } from "@tanstack/react-query";
 import { useCallback, useState } from "react";
+
 import { ScalarValue } from "../../api/api";
 import { useScansColumnValues } from "../server/useScansColumnValues";
 import { useScanFilterConditions } from "./useScanFilterConditions";

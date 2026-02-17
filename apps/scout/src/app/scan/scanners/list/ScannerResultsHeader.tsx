@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, MouseEvent, useCallback } from "react";
+
 import { ApplicationIcons } from "../../../../components/icons";
 import { useStore } from "../../../../state/store";
 import styles from "./ScannerResultsHeader.module.css";

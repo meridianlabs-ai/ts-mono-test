@@ -9,6 +9,7 @@ This project uses [pnpm](https://pnpm.io/) as its package manager, managed throu
 ### Setup
 
 **Enable corepack** (required once):
+
 ```bash
 corepack enable
 ```
@@ -94,6 +95,7 @@ Types are auto-generated from the FastAPI OpenAPI spec to keep client/server in 
 ### How It Works
 
 The type generation pipeline:
+
 ```
 Python Pydantic models → openapi.json → generated.ts → built app
 ```

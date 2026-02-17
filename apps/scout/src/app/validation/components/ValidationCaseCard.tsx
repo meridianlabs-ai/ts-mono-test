@@ -1,6 +1,7 @@
 import { VscodeCheckbox } from "@vscode-elements/react-elements";
 import React, { CSSProperties, FC, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import { ApplicationIcons } from "../../../components/icons";
 import { Modal } from "../../../components/Modal";
 import { transcriptRoute } from "../../../router/url";

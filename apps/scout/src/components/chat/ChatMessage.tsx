@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FC, memo, useState } from "react";
+
 import { useTranscriptNavigation } from "../../app/transcript/hooks/useTranscriptNavigation";
 import { isHostedEnvironment } from "../../router/url";
 import {

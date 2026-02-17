@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import { FC, useCallback, useEffect, useMemo } from "react";
+
 import { ErrorPanel } from "../../components/ErrorPanel";
 import { ExtendedFindProvider } from "../../components/ExtendedFindProvider";
 import { ApplicationIcons } from "../../components/icons";

@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import { FC, useCallback, useRef, useState } from "react";
+
 import { ScalarValue } from "../../api/api";
 import { ApplicationIcons } from "../../components/icons";
 import { PopOver } from "../../components/PopOver";

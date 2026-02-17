@@ -20,6 +20,7 @@ import {
   useRef,
   useState,
 } from "react";
+
 import { ApplicationIcons } from "../../../components/icons";
 import { useLoggingNavigate } from "../../../debugging/navigationDebugging";
 import type { SimpleCondition } from "../../../query/types";

@@ -70,9 +70,7 @@
             "type": "object"
           }
         },
-        "required": [
-          "items"
-        ],
+        "required": ["items"],
         "title": "ActiveScansResponse",
         "type": "object"
       },
@@ -355,12 +353,7 @@
             "title": "Worklist"
           }
         },
-        "required": [
-          "filter",
-          "scans",
-          "home_dir",
-          "project_dir"
-        ],
+        "required": ["filter", "scans", "home_dir", "project_dir"],
         "title": "AppConfig",
         "type": "object"
       },
@@ -372,18 +365,12 @@
             "type": "string"
           },
           "source": {
-            "enum": [
-              "project",
-              "cli"
-            ],
+            "enum": ["project", "cli"],
             "title": "Source",
             "type": "string"
           }
         },
-        "required": [
-          "dir",
-          "source"
-        ],
+        "required": ["dir", "source"],
         "title": "AppDir",
         "type": "object"
       },
@@ -398,13 +385,7 @@
             "$ref": "#/components/schemas/ToolCall"
           },
           "decision": {
-            "enum": [
-              "approve",
-              "modify",
-              "reject",
-              "escalate",
-              "terminate"
-            ],
+            "enum": ["approve", "modify", "reject", "escalate", "terminate"],
             "title": "Decision",
             "type": "string"
           },
@@ -630,10 +611,7 @@
             "type": "object"
           }
         },
-        "required": [
-          "per_epoch",
-          "scopes"
-        ],
+        "required": ["per_epoch", "scopes"],
         "title": "CachePolicy",
         "type": "object"
       },
@@ -668,10 +646,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "message",
-          "stop_reason"
-        ],
+        "required": ["message", "stop_reason"],
         "title": "ChatCompletionChoice",
         "type": "object"
       },
@@ -779,10 +754,7 @@
           "source": {
             "anyOf": [
               {
-                "enum": [
-                  "input",
-                  "generate"
-                ],
+                "enum": ["input", "generate"],
                 "type": "string"
               },
               {
@@ -808,10 +780,7 @@
             "title": "Tool Calls"
           }
         },
-        "required": [
-          "content",
-          "role"
-        ],
+        "required": ["content", "role"],
         "title": "ChatMessageAssistant",
         "type": "object"
       },
@@ -891,10 +860,7 @@
           "source": {
             "anyOf": [
               {
-                "enum": [
-                  "input",
-                  "generate"
-                ],
+                "enum": ["input", "generate"],
                 "type": "string"
               },
               {
@@ -905,10 +871,7 @@
             "title": "Source"
           }
         },
-        "required": [
-          "content",
-          "role"
-        ],
+        "required": ["content", "role"],
         "title": "ChatMessageSystem",
         "type": "object"
       },
@@ -1011,10 +974,7 @@
           "source": {
             "anyOf": [
               {
-                "enum": [
-                  "input",
-                  "generate"
-                ],
+                "enum": ["input", "generate"],
                 "type": "string"
               },
               {
@@ -1037,10 +997,7 @@
             "title": "Tool Call Id"
           }
         },
-        "required": [
-          "content",
-          "role"
-        ],
+        "required": ["content", "role"],
         "title": "ChatMessageTool",
         "type": "object"
       },
@@ -1120,10 +1077,7 @@
           "source": {
             "anyOf": [
               {
-                "enum": [
-                  "input",
-                  "generate"
-                ],
+                "enum": ["input", "generate"],
                 "type": "string"
               },
               {
@@ -1149,10 +1103,7 @@
             "title": "Tool Call Id"
           }
         },
-        "required": [
-          "content",
-          "role"
-        ],
+        "required": ["content", "role"],
         "title": "ChatMessageUser",
         "type": "object"
       },
@@ -1260,11 +1211,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event"
-        ],
+        "required": ["timestamp", "working_start", "event"],
         "title": "CompactionEvent",
         "type": "object"
       },
@@ -1427,9 +1374,7 @@
             "title": "Right"
           }
         },
-        "required": [
-          "is_compound"
-        ],
+        "required": ["is_compound"],
         "title": "Condition",
         "type": "object"
       },
@@ -1469,10 +1414,7 @@
             "type": "string"
           },
           "format": {
-            "enum": [
-              "wav",
-              "mp3"
-            ],
+            "enum": ["wav", "mp3"],
             "title": "Format",
             "type": "string"
           },
@@ -1494,11 +1436,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "audio",
-          "format"
-        ],
+        "required": ["type", "audio", "format"],
         "title": "ContentAudio",
         "type": "object"
       },
@@ -1559,9 +1497,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type"
-        ],
+        "required": ["type"],
         "title": "ContentCitation",
         "type": "object"
       },
@@ -1593,10 +1529,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "data"
-        ],
+        "required": ["type", "data"],
         "title": "ContentData",
         "type": "object"
       },
@@ -1633,12 +1566,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "document",
-          "filename",
-          "mime_type"
-        ],
+        "required": ["type", "document", "filename", "mime_type"],
         "title": "ContentDocument",
         "type": "object"
       },
@@ -1647,11 +1575,7 @@
         "properties": {
           "detail": {
             "default": "auto",
-            "enum": [
-              "auto",
-              "low",
-              "high"
-            ],
+            "enum": ["auto", "low", "high"],
             "title": "Detail",
             "type": "string"
           },
@@ -1677,11 +1601,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "image",
-          "detail"
-        ],
+        "required": ["type", "image", "detail"],
         "title": "ContentImage",
         "type": "object"
       },
@@ -1739,11 +1659,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "reasoning",
-          "redacted"
-        ],
+        "required": ["type", "reasoning", "redacted"],
         "title": "ContentReasoning",
         "type": "object"
       },
@@ -1817,10 +1733,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "text"
-        ],
+        "required": ["type", "text"],
         "title": "ContentText",
         "type": "object"
       },
@@ -1879,11 +1792,7 @@
             "type": "string"
           },
           "tool_type": {
-            "enum": [
-              "web_search",
-              "mcp_call",
-              "code_execution"
-            ],
+            "enum": ["web_search", "mcp_call", "code_execution"],
             "title": "Tool Type",
             "type": "string"
           },
@@ -1894,14 +1803,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "tool_type",
-          "id",
-          "name",
-          "arguments",
-          "result"
-        ],
+        "required": ["type", "tool_type", "id", "name", "arguments", "result"],
         "title": "ContentToolUse",
         "type": "object"
       },
@@ -1909,11 +1811,7 @@
         "description": "Video content.",
         "properties": {
           "format": {
-            "enum": [
-              "mp4",
-              "mpeg",
-              "mov"
-            ],
+            "enum": ["mp4", "mpeg", "mov"],
             "title": "Format",
             "type": "string"
           },
@@ -1939,11 +1837,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "video",
-          "format"
-        ],
+        "required": ["type", "video", "format"],
         "title": "ContentVideo",
         "type": "object"
       },
@@ -1961,10 +1855,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "path",
-          "cases"
-        ],
+        "required": ["path", "cases"],
         "title": "CreateValidationSetRequest",
         "type": "object"
       },
@@ -1985,9 +1876,7 @@
             ]
           }
         },
-        "required": [
-          "column"
-        ],
+        "required": ["column"],
         "title": "DistinctRequest",
         "type": "object"
       },
@@ -2059,9 +1948,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type"
-        ],
+        "required": ["type"],
         "title": "DocumentCitation",
         "type": "object"
       },
@@ -2077,20 +1964,12 @@
             "type": "integer"
           },
           "type": {
-            "enum": [
-              "block",
-              "page",
-              "char"
-            ],
+            "enum": ["block", "page", "char"],
             "title": "Type",
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "start_index",
-          "end_index"
-        ],
+        "required": ["type", "start_index", "end_index"],
         "title": "DocumentRange",
         "type": "object"
       },
@@ -2199,12 +2078,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "error"
-        ],
+        "required": ["timestamp", "working_start", "event", "error"],
         "title": "ErrorEvent",
         "type": "object"
       },
@@ -2224,11 +2098,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "message",
-          "traceback",
-          "traceback_ansi"
-        ],
+        "required": ["message", "traceback", "traceback_ansi"],
         "title": "EvalError",
         "type": "object"
       },
@@ -2372,12 +2242,7 @@
           "effort": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high",
-                  "max"
-                ],
+                "enum": ["low", "medium", "high", "max"],
                 "type": "string"
               },
               {
@@ -2553,14 +2418,7 @@
           "reasoning_effort": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "minimal",
-                  "low",
-                  "medium",
-                  "high",
-                  "xhigh"
-                ],
+                "enum": ["none", "minimal", "low", "medium", "high", "xhigh"],
                 "type": "string"
               },
               {
@@ -2573,12 +2431,7 @@
           "reasoning_history": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "all",
-                  "last",
-                  "auto"
-                ],
+                "enum": ["none", "all", "last", "auto"],
                 "type": "string"
               },
               {
@@ -2591,12 +2444,7 @@
           "reasoning_summary": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "concise",
-                  "detailed",
-                  "auto"
-                ],
+                "enum": ["none", "concise", "detailed", "auto"],
                 "type": "string"
               },
               {
@@ -2731,11 +2579,7 @@
           "verbosity": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high"
-                ],
+                "enum": ["low", "medium", "high"],
                 "type": "string"
               },
               {
@@ -2823,12 +2667,7 @@
           "effort": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high",
-                  "max"
-                ],
+                "enum": ["low", "medium", "high", "max"],
                 "type": "string"
               },
               {
@@ -2990,14 +2829,7 @@
           "reasoning_effort": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "minimal",
-                  "low",
-                  "medium",
-                  "high",
-                  "xhigh"
-                ],
+                "enum": ["none", "minimal", "low", "medium", "high", "xhigh"],
                 "type": "string"
               },
               {
@@ -3009,12 +2841,7 @@
           "reasoning_history": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "all",
-                  "last",
-                  "auto"
-                ],
+                "enum": ["none", "all", "last", "auto"],
                 "type": "string"
               },
               {
@@ -3026,12 +2853,7 @@
           "reasoning_summary": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "concise",
-                  "detailed",
-                  "auto"
-                ],
+                "enum": ["none", "concise", "detailed", "auto"],
                 "type": "string"
               },
               {
@@ -3155,11 +2977,7 @@
           "verbosity": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high"
-                ],
+                "enum": ["low", "medium", "high"],
                 "type": "string"
               },
               {
@@ -3246,12 +3064,7 @@
           "effort": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high",
-                  "max"
-                ],
+                "enum": ["low", "medium", "high", "max"],
                 "type": "string"
               },
               {
@@ -3413,14 +3226,7 @@
           "reasoning_effort": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "minimal",
-                  "low",
-                  "medium",
-                  "high",
-                  "xhigh"
-                ],
+                "enum": ["none", "minimal", "low", "medium", "high", "xhigh"],
                 "type": "string"
               },
               {
@@ -3432,12 +3238,7 @@
           "reasoning_history": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "all",
-                  "last",
-                  "auto"
-                ],
+                "enum": ["none", "all", "last", "auto"],
                 "type": "string"
               },
               {
@@ -3449,12 +3250,7 @@
           "reasoning_summary": {
             "anyOf": [
               {
-                "enum": [
-                  "none",
-                  "concise",
-                  "detailed",
-                  "auto"
-                ],
+                "enum": ["none", "concise", "detailed", "auto"],
                 "type": "string"
               },
               {
@@ -3578,11 +3374,7 @@
           "verbosity": {
             "anyOf": [
               {
-                "enum": [
-                  "low",
-                  "medium",
-                  "high"
-                ],
+                "enum": ["low", "medium", "high"],
                 "type": "string"
               },
               {
@@ -3691,12 +3483,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "data"
-        ],
+        "required": ["timestamp", "working_start", "event", "data"],
         "title": "InfoEvent",
         "type": "object"
       },
@@ -3787,10 +3574,7 @@
         "type": "object"
       },
       "InvalidationTopic": {
-        "enum": [
-          "project-config",
-          "scans"
-        ],
+        "enum": ["project-config", "scans"],
         "type": "string"
       },
       "JSONSchema": {
@@ -3945,9 +3729,7 @@
             "title": "Type"
           }
         },
-        "required": [
-          "default"
-        ],
+        "required": ["default"],
         "title": "JSONSchema",
         "type": "object"
       },
@@ -4093,9 +3875,7 @@
             "title": "Type"
           }
         },
-        "required": [
-          "default"
-        ],
+        "required": ["default"],
         "title": "JSONSchema",
         "type": "object"
       },
@@ -4241,9 +4021,7 @@
             "title": "Type"
           }
         },
-        "required": [
-          "default"
-        ],
+        "required": ["default"],
         "title": "JSONSchema",
         "type": "object"
       },
@@ -4263,14 +4041,7 @@
             "title": "From"
           },
           "op": {
-            "enum": [
-              "remove",
-              "add",
-              "replace",
-              "move",
-              "test",
-              "copy"
-            ],
+            "enum": ["remove", "add", "replace", "move", "test", "copy"],
             "title": "Op",
             "type": "string"
           },
@@ -4287,12 +4058,7 @@
             "default": null
           }
         },
-        "required": [
-          "op",
-          "path",
-          "value",
-          "replaced"
-        ],
+        "required": ["op", "path", "value", "replaced"],
         "title": "JsonChange",
         "type": "object"
       },
@@ -4327,11 +4093,7 @@
         "description": "Parameters for llm_scanner.",
         "properties": {
           "answer": {
-            "enum": [
-              "boolean",
-              "numeric",
-              "string"
-            ],
+            "enum": ["boolean", "numeric", "string"],
             "title": "Answer",
             "type": "string"
           },
@@ -4350,10 +4112,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "question",
-          "answer"
-        ],
+        "required": ["question", "answer"],
         "title": "LlmScannerParams",
         "type": "object"
       },
@@ -4428,12 +4187,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "message"
-        ],
+        "required": ["timestamp", "working_start", "event", "message"],
         "title": "LoggerEvent",
         "type": "object"
       },
@@ -4503,11 +4257,7 @@
       },
       "LogicalOperator": {
         "description": "Logical operators for combining conditions.",
-        "enum": [
-          "AND",
-          "OR",
-          "NOT"
-        ],
+        "enum": ["AND", "OR", "NOT"],
         "title": "LogicalOperator",
         "type": "string"
       },
@@ -4553,10 +4303,7 @@
             "title": "Top Logprobs"
           }
         },
-        "required": [
-          "token",
-          "logprob"
-        ],
+        "required": ["token", "logprob"],
         "title": "Logprob",
         "type": "object"
       },
@@ -4571,9 +4318,7 @@
             "type": "array"
           }
         },
-        "required": [
-          "content"
-        ],
+        "required": ["content"],
         "title": "Logprobs",
         "type": "object"
       },
@@ -4707,10 +4452,7 @@
             "type": "array"
           }
         },
-        "required": [
-          "messages",
-          "events"
-        ],
+        "required": ["messages", "events"],
         "title": "MessagesEventsResponse",
         "type": "object"
       },
@@ -4752,9 +4494,7 @@
             "title": "Time"
           }
         },
-        "required": [
-          "request"
-        ],
+        "required": ["request"],
         "title": "ModelCall",
         "type": "object"
       },
@@ -4785,11 +4525,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "model",
-          "config",
-          "args"
-        ],
+        "required": ["model", "config", "args"],
         "title": "ModelConfig",
         "type": "object"
       },
@@ -4820,11 +4556,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "model",
-          "config",
-          "args"
-        ],
+        "required": ["model", "config", "args"],
         "title": "ModelConfig",
         "type": "object"
       },
@@ -4834,10 +4566,7 @@
           "cache": {
             "anyOf": [
               {
-                "enum": [
-                  "read",
-                  "write"
-                ],
+                "enum": ["read", "write"],
                 "type": "string"
               },
               {
@@ -4988,11 +4717,7 @@
           "tool_choice": {
             "anyOf": [
               {
-                "enum": [
-                  "auto",
-                  "any",
-                  "none"
-                ],
+                "enum": ["auto", "any", "none"],
                 "type": "string"
               },
               {
@@ -5144,11 +4869,7 @@
             "default": null
           }
         },
-        "required": [
-          "model",
-          "choices",
-          "completion"
-        ],
+        "required": ["model", "choices", "completion"],
         "title": "ModelOutput",
         "type": "object"
       },
@@ -5219,11 +4940,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "input_tokens",
-          "output_tokens",
-          "total_tokens"
-        ],
+        "required": ["input_tokens", "output_tokens", "total_tokens"],
         "title": "ModelUsage",
         "type": "object"
       },
@@ -5257,18 +4974,12 @@
             "type": "string"
           },
           "direction": {
-            "enum": [
-              "ASC",
-              "DESC"
-            ],
+            "enum": ["ASC", "DESC"],
             "title": "Direction",
             "type": "string"
           }
         },
-        "required": [
-          "column",
-          "direction"
-        ],
+        "required": ["column", "direction"],
         "title": "OrderBy",
         "type": "object"
       },
@@ -5287,10 +4998,7 @@
             "title": "Cursor"
           },
           "direction": {
-            "enum": [
-              "forward",
-              "backward"
-            ],
+            "enum": ["forward", "backward"],
             "title": "Direction",
             "type": "string"
           },
@@ -5299,10 +5007,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "limit",
-          "direction"
-        ],
+        "required": ["limit", "direction"],
         "title": "Pagination",
         "type": "object"
       },
@@ -5586,9 +5291,7 @@
             "title": "Worklist"
           }
         },
-        "required": [
-          "filter"
-        ],
+        "required": ["filter"],
         "title": "ProjectConfig",
         "type": "object"
       },
@@ -5872,9 +5575,7 @@
             "title": "Worklist"
           }
         },
-        "required": [
-          "filter"
-        ],
+        "required": ["filter"],
         "title": "ProjectConfig",
         "type": "object"
       },
@@ -5908,18 +5609,12 @@
             "type": "string"
           }
         },
-        "required": [
-          "timestamp",
-          "author",
-          "metadata"
-        ],
+        "required": ["timestamp", "author", "metadata"],
         "title": "ProvenanceData",
         "type": "object"
       },
       "RawEncoding": {
-        "enum": [
-          "zstd"
-        ],
+        "enum": ["zstd"],
         "type": "string"
       },
       "RenameValidationSetRequest": {
@@ -5929,9 +5624,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "title": "RenameValidationSetRequest",
         "type": "object"
       },
@@ -5970,10 +5663,7 @@
             "title": "Strict"
           }
         },
-        "required": [
-          "name",
-          "json_schema"
-        ],
+        "required": ["name", "json_schema"],
         "title": "ResponseSchema",
         "type": "object"
       },
@@ -6010,10 +5700,7 @@
             "title": "Strict"
           }
         },
-        "required": [
-          "name",
-          "json_schema"
-        ],
+        "required": ["name", "json_schema"],
         "title": "ResponseSchema",
         "type": "object"
       },
@@ -6050,10 +5737,7 @@
             "title": "Strict"
           }
         },
-        "required": [
-          "name",
-          "json_schema"
-        ],
+        "required": ["name", "json_schema"],
         "title": "ResponseSchema",
         "type": "object"
       },
@@ -6183,10 +5867,7 @@
             "title": "Target"
           }
         },
-        "required": [
-          "input",
-          "target"
-        ],
+        "required": ["input", "target"],
         "title": "Sample",
         "type": "object"
       },
@@ -6264,13 +5945,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "sample",
-          "state"
-        ],
+        "required": ["timestamp", "working_start", "event", "sample", "state"],
         "title": "SampleInitEvent",
         "type": "object"
       },
@@ -6371,13 +6046,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "type",
-          "message"
-        ],
+        "required": ["timestamp", "working_start", "event", "type", "message"],
         "title": "SampleLimitEvent",
         "type": "object"
       },
@@ -6393,10 +6062,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "config"
-        ],
+        "required": ["type", "config"],
         "title": "SandboxEnvironmentSpec",
         "type": "object"
       },
@@ -6404,11 +6070,7 @@
         "description": "Sandbox execution or I/O",
         "properties": {
           "action": {
-            "enum": [
-              "exec",
-              "read_file",
-              "write_file"
-            ],
+            "enum": ["exec", "read_file", "write_file"],
             "title": "Action",
             "type": "string"
           },
@@ -6565,12 +6227,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "action"
-        ],
+        "required": ["timestamp", "working_start", "event", "action"],
         "title": "SandboxEvent",
         "type": "object"
       },
@@ -6854,9 +6511,7 @@
             "title": "Worklist"
           }
         },
-        "required": [
-          "filter"
-        ],
+        "required": ["filter"],
         "title": "ScanJobConfig",
         "type": "object"
       },
@@ -6984,9 +6639,7 @@
             "title": "Shuffle"
           }
         },
-        "required": [
-          "max_transcripts"
-        ],
+        "required": ["max_transcripts"],
         "title": "ScanOptions",
         "type": "object"
       },
@@ -7012,12 +6665,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "origin",
-          "version",
-          "commit"
-        ],
+        "required": ["type", "origin", "version", "commit"],
         "title": "ScanRevision",
         "type": "object"
       },
@@ -7138,12 +6786,7 @@
             "type": "string"
           },
           "status": {
-            "enum": [
-              "active",
-              "error",
-              "complete",
-              "incomplete"
-            ],
+            "enum": ["active", "error", "complete", "incomplete"],
             "title": "Status",
             "type": "string"
           },
@@ -7428,19 +7071,12 @@
             "type": "object"
           },
           "type": {
-            "enum": [
-              "eval_log",
-              "database"
-            ],
+            "enum": ["eval_log", "database"],
             "title": "Type",
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "transcript_ids",
-          "count"
-        ],
+        "required": ["type", "transcript_ids", "count"],
         "title": "ScanTranscripts",
         "type": "object"
       },
@@ -7473,11 +7109,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "name",
-          "version",
-          "params"
-        ],
+        "required": ["name", "version", "params"],
         "title": "ScannerInfo",
         "type": "object"
       },
@@ -7506,11 +7138,7 @@
             "type": "object"
           }
         },
-        "required": [
-          "name",
-          "schema",
-          "required"
-        ],
+        "required": ["name", "schema", "required"],
         "title": "ScannerParam",
         "type": "object"
       },
@@ -7554,11 +7182,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "name",
-          "version",
-          "params"
-        ],
+        "required": ["name", "version", "params"],
         "title": "ScannerSpec",
         "type": "object"
       },
@@ -7641,9 +7265,7 @@
             "type": "array"
           }
         },
-        "required": [
-          "items"
-        ],
+        "required": ["items"],
         "title": "ScannersResponse",
         "type": "object"
       },
@@ -7716,10 +7338,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "items",
-          "total_count"
-        ],
+        "required": ["items", "total_count"],
         "title": "ScansResponse",
         "type": "object"
       },
@@ -7829,10 +7448,7 @@
             "title": "Value"
           }
         },
-        "required": [
-          "value",
-          "history"
-        ],
+        "required": ["value", "history"],
         "title": "Score",
         "type": "object"
       },
@@ -7960,10 +7576,7 @@
             "title": "Value"
           }
         },
-        "required": [
-          "value",
-          "metadata"
-        ],
+        "required": ["value", "metadata"],
         "title": "ScoreEdit",
         "type": "object"
       },
@@ -8271,13 +7884,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "id",
-          "name"
-        ],
+        "required": ["timestamp", "working_start", "event", "id", "name"],
         "title": "SpanBeginEvent",
         "type": "object"
       },
@@ -8353,12 +7960,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "id"
-        ],
+        "required": ["timestamp", "working_start", "event", "id"],
         "title": "SpanEndEvent",
         "type": "object"
       },
@@ -8437,12 +8039,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "changes"
-        ],
+        "required": ["timestamp", "working_start", "event", "changes"],
         "title": "StateEvent",
         "type": "object"
       },
@@ -8470,13 +8067,7 @@
             "$ref": "#/components/schemas/Summary"
           }
         },
-        "required": [
-          "complete",
-          "spec",
-          "location",
-          "summary",
-          "errors"
-        ],
+        "required": ["complete", "spec", "location", "summary", "errors"],
         "title": "Status",
         "type": "object"
       },
@@ -8484,10 +8075,7 @@
         "description": "Step within current sample or subtask.",
         "properties": {
           "action": {
-            "enum": [
-              "begin",
-              "end"
-            ],
+            "enum": ["begin", "end"],
             "title": "Action",
             "type": "string"
           },
@@ -8572,13 +8160,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "action",
-          "name"
-        ],
+        "required": ["timestamp", "working_start", "event", "action", "name"],
         "title": "StepEvent",
         "type": "object"
       },
@@ -8657,12 +8239,7 @@
             "type": "number"
           }
         },
-        "required": [
-          "timestamp",
-          "working_start",
-          "event",
-          "changes"
-        ],
+        "required": ["timestamp", "working_start", "event", "changes"],
         "title": "StoreEvent",
         "type": "object"
       },
@@ -8817,10 +8394,7 @@
             "type": "object"
           }
         },
-        "required": [
-          "complete",
-          "scanners"
-        ],
+        "required": ["complete", "scanners"],
         "title": "Summary",
         "type": "object"
       },
@@ -8853,10 +8427,7 @@
           },
           "type": {
             "default": "function",
-            "enum": [
-              "function",
-              "custom"
-            ],
+            "enum": ["function", "custom"],
             "title": "Type",
             "type": "string"
           },
@@ -8872,12 +8443,7 @@
             "default": null
           }
         },
-        "required": [
-          "id",
-          "function",
-          "arguments",
-          "type"
-        ],
+        "required": ["id", "function", "arguments", "type"],
         "title": "ToolCall",
         "type": "object"
       },
@@ -8889,10 +8455,7 @@
             "type": "string"
           },
           "format": {
-            "enum": [
-              "text",
-              "markdown"
-            ],
+            "enum": ["text", "markdown"],
             "title": "Format",
             "type": "string"
           },
@@ -8909,10 +8472,7 @@
             "title": "Title"
           }
         },
-        "required": [
-          "format",
-          "content"
-        ],
+        "required": ["format", "content"],
         "title": "ToolCallContent",
         "type": "object"
       },
@@ -8939,10 +8499,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "message"
-        ],
+        "required": ["type", "message"],
         "title": "ToolCallError",
         "type": "object"
       },
@@ -9243,9 +8800,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "name"
-        ],
+        "required": ["name"],
         "title": "ToolFunction",
         "type": "object"
       },
@@ -9277,11 +8832,7 @@
             "$ref": "#/components/schemas/ToolParams"
           }
         },
-        "required": [
-          "name",
-          "description",
-          "parameters"
-        ],
+        "required": ["name", "description", "parameters"],
         "title": "ToolInfo",
         "type": "object"
       },
@@ -9324,11 +8875,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "properties",
-          "required"
-        ],
+        "required": ["type", "properties", "required"],
         "title": "ToolParams",
         "type": "object"
       },
@@ -9359,10 +8906,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "token",
-          "logprob"
-        ],
+        "required": ["token", "logprob"],
         "title": "TopLogprob",
         "type": "object"
       },
@@ -9663,12 +9207,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "transcript_id",
-          "metadata",
-          "messages",
-          "events"
-        ],
+        "required": ["transcript_id", "metadata", "messages", "events"],
         "title": "Transcript",
         "type": "object"
       },
@@ -9688,11 +9227,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "name",
-          "type",
-          "tz"
-        ],
+        "required": ["name", "type", "tz"],
         "title": "TranscriptField",
         "type": "object"
       },
@@ -9908,10 +9443,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "transcript_id",
-          "metadata"
-        ],
+        "required": ["transcript_id", "metadata"],
         "title": "TranscriptInfo",
         "type": "object"
       },
@@ -9984,10 +9516,7 @@
             "type": "integer"
           }
         },
-        "required": [
-          "items",
-          "total_count"
-        ],
+        "required": ["items", "total_count"],
         "title": "TranscriptsResponse",
         "type": "object"
       },
@@ -10052,10 +9581,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "type",
-          "url"
-        ],
+        "required": ["type", "url"],
         "title": "UrlCitation",
         "type": "object"
       },
@@ -10136,10 +9662,7 @@
             ]
           }
         },
-        "required": [
-          "id",
-          "labels"
-        ],
+        "required": ["id", "labels"],
         "title": "ValidationCase",
         "type": "object"
       },
@@ -10247,11 +9770,7 @@
             "title": "Valid"
           }
         },
-        "required": [
-          "id",
-          "target",
-          "valid"
-        ],
+        "required": ["id", "target", "valid"],
         "title": "ValidationEntry",
         "type": "object"
       },
@@ -10287,11 +9806,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "loc",
-          "msg",
-          "type"
-        ],
+        "required": ["loc", "msg", "type"],
         "title": "ValidationError",
         "type": "object"
       },
@@ -10439,9 +9954,7 @@
             "title": "Metrics By Key"
           }
         },
-        "required": [
-          "entries"
-        ],
+        "required": ["entries"],
         "title": "ValidationResults",
         "type": "object"
       },
@@ -10498,10 +10011,7 @@
             "title": "Split"
           }
         },
-        "required": [
-          "cases",
-          "predicate"
-        ],
+        "required": ["cases", "predicate"],
         "title": "ValidationSet",
         "type": "object"
       },
@@ -10544,10 +10054,7 @@
             "title": "Split"
           }
         },
-        "required": [
-          "cases",
-          "predicate"
-        ],
+        "required": ["cases", "predicate"],
         "title": "ValidationSet",
         "type": "object"
       },
@@ -10566,10 +10073,7 @@
             "type": "array"
           }
         },
-        "required": [
-          "scanner",
-          "transcripts"
-        ],
+        "required": ["scanner", "transcripts"],
         "title": "Worklist",
         "type": "object"
       }
@@ -10598,9 +10102,7 @@
           }
         },
         "summary": "Get application configuration",
-        "tags": [
-          "config"
-        ]
+        "tags": ["config"]
       }
     },
     "/code": {
@@ -10645,9 +10147,7 @@
           }
         },
         "summary": "Code endpoint",
-        "tags": [
-          "scanners"
-        ]
+        "tags": ["scanners"]
       }
     },
     "/project/config": {
@@ -10667,9 +10167,7 @@
           }
         },
         "summary": "Get project configuration",
-        "tags": [
-          "config"
-        ]
+        "tags": ["config"]
       },
       "put": {
         "description": "Updates the project configuration in scout.yaml while preserving comments and formatting. Optionally include If-Match header with current ETag for optimistic concurrency control. Omit If-Match to force save.",
@@ -10717,9 +10215,7 @@
           }
         },
         "summary": "Update project configuration",
-        "tags": [
-          "config"
-        ]
+        "tags": ["config"]
       }
     },
     "/scanners": {
@@ -10739,9 +10235,7 @@
           }
         },
         "summary": "List available scanners",
-        "tags": [
-          "scanners"
-        ]
+        "tags": ["scanners"]
       }
     },
     "/scans/active": {
@@ -10761,9 +10255,7 @@
           }
         },
         "summary": "Get active scans",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/scans/{dir}": {
@@ -10813,9 +10305,7 @@
           }
         },
         "summary": "List scans",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/scans/{dir}/distinct": {
@@ -10893,9 +10383,7 @@
           }
         },
         "summary": "Get distinct column values",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/scans/{dir}/{scan}": {
@@ -10932,9 +10420,7 @@
           }
         },
         "summary": "Delete a scan",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       },
       "get": {
         "description": "Returns detailed status and metadata for a single scan.",
@@ -10976,9 +10462,7 @@
           }
         },
         "summary": "Get scan status",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/scans/{dir}/{scan}/{scanner}": {
@@ -11031,9 +10515,7 @@
           }
         },
         "summary": "Get scanner dataframe containing results for all transcripts",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/scans/{dir}/{scan}/{scanner}/{uuid}/input": {
@@ -11097,9 +10579,7 @@
           }
         },
         "summary": "Get scanner input for a specific transcript",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/startscan": {
@@ -11129,9 +10609,7 @@
           }
         },
         "summary": "Run llm_scanner",
-        "tags": [
-          "scans"
-        ]
+        "tags": ["scans"]
       }
     },
     "/topics": {
@@ -11147,10 +10625,7 @@
                     "type": "string"
                   },
                   "propertyNames": {
-                    "enum": [
-                      "project-config",
-                      "scans"
-                    ]
+                    "enum": ["project-config", "scans"]
                   },
                   "title": "Response Get Topics Topics Get",
                   "type": "object"
@@ -11161,9 +10636,7 @@
           }
         },
         "summary": "Get current topic versions",
-        "tags": [
-          "topics"
-        ]
+        "tags": ["topics"]
       }
     },
     "/topics/stream": {
@@ -11181,9 +10654,7 @@
           }
         },
         "summary": "Stream topic updates",
-        "tags": [
-          "topics"
-        ]
+        "tags": ["topics"]
       }
     },
     "/transcripts/{dir}": {
@@ -11233,9 +10704,7 @@
           }
         },
         "summary": "List transcripts",
-        "tags": [
-          "transcripts"
-        ]
+        "tags": ["transcripts"]
       }
     },
     "/transcripts/{dir}/distinct": {
@@ -11313,9 +10782,7 @@
           }
         },
         "summary": "Get distinct column values",
-        "tags": [
-          "transcripts"
-        ]
+        "tags": ["transcripts"]
       }
     },
     "/transcripts/{dir}/{id}/info": {
@@ -11359,9 +10826,7 @@
           }
         },
         "summary": "Get transcript info",
-        "tags": [
-          "transcripts"
-        ]
+        "tags": ["transcripts"]
       },
       "head": {
         "description": "Checks if a transcript exists.",
@@ -11403,9 +10868,7 @@
           }
         },
         "summary": "Check transcript existence",
-        "tags": [
-          "transcripts"
-        ]
+        "tags": ["transcripts"]
       }
     },
     "/transcripts/{dir}/{id}/messages-events": {
@@ -11471,9 +10934,7 @@
           }
         },
         "summary": "Get transcript messages and events",
-        "tags": [
-          "transcripts"
-        ]
+        "tags": ["transcripts"]
       }
     },
     "/validations": {
@@ -11497,9 +10958,7 @@
           }
         },
         "summary": "List validation files",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       },
       "post": {
         "description": "Creates a new validation file at the specified path with optional initial cases. Returns the URI of the created file.",
@@ -11528,9 +10987,7 @@
           }
         },
         "summary": "Create a validation file",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       }
     },
     "/validations/{uri}": {
@@ -11556,9 +11013,7 @@
           }
         },
         "summary": "Delete a validation file",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       },
       "get": {
         "description": "Returns all cases from a validation file.",
@@ -11594,9 +11049,7 @@
           }
         },
         "summary": "Get validation cases",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       }
     },
     "/validations/{uri}/rename": {
@@ -11640,9 +11093,7 @@
           }
         },
         "summary": "Rename a validation file",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       }
     },
     "/validations/{uri}/{case_id}": {
@@ -11679,9 +11130,7 @@
           }
         },
         "summary": "Delete a case",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       },
       "get": {
         "description": "Returns a specific case from a validation file by ID.",
@@ -11725,9 +11174,7 @@
           }
         },
         "summary": "Get a specific case",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       },
       "post": {
         "description": "Creates or updates a case in a validation file. If the case ID exists, it will be updated; otherwise, a new case will be created.",
@@ -11781,9 +11228,7 @@
           }
         },
         "summary": "Create or update a case",
-        "tags": [
-          "validations"
-        ]
+        "tags": ["validations"]
       }
     }
   }

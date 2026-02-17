@@ -1,5 +1,7 @@
-import { encodeBase64Url } from "@tsmono/common";
 import { http, HttpResponse } from "msw";
+
+import { encodeBase64Url } from "@tsmono/common";
+
 import type { ScansResponse, Status } from "../src/types/api-types";
 import { expect, test } from "./fixtures/app";
 import {

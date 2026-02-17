@@ -1,7 +1,10 @@
 import clsx from "clsx";
 import { FC, KeyboardEvent, useCallback, useEffect, useRef } from "react";
+
 import { useExtendedFind } from "./ExtendedFindContext";
+
 import "./FindBand.css";
+
 import { ApplicationIcons } from "./icons";
 
 interface FindBandProps {

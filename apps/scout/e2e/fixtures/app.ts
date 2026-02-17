@@ -1,5 +1,6 @@
 import { createNetworkFixture, type NetworkFixture } from "@msw/playwright";
 import { test as base } from "@playwright/test";
+
 import { defaultHandlers } from "./handlers";
 
 /**
