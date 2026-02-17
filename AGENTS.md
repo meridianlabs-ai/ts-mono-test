@@ -35,8 +35,11 @@ All commands run from the repo root.
 | `pnpm lint`          | Lint all packages                  |
 | `pnpm typecheck`     | Type-check all packages            |
 | `pnpm test`          | Run all tests (via Turborepo)      |
-| `pnpm check`         | Lint + typecheck                   |
+| `pnpm check`         | Lint + typecheck + format check    |
 | `pnpm manypkg:check` | Validate workspace consistency     |
+
+Turbo orchestrates all task parallelism — workspace scripts are single-concern
+leaf commands. See [scripts.md](scripts.md) for the full policy.
 
 ## Key Conventions
 
