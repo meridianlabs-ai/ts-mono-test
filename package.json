@@ -17,10 +17,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,cjs,json,css,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mjs,cjs,json,css,md}\""
   },
+  "//": "manypkg requires root deps in 'dependencies', not 'devDependencies'. The root is private and never published, so the distinction is meaningless here — it's a consistency convention.",
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@manypkg/cli": "^0.22.0",
     "@tsmono/prettier-config": "workspace:*",
+    "picocolors": "^1.1.1",
     "prettier": "^3.7.4",
     "turbo": "^2.5.4"
   },
