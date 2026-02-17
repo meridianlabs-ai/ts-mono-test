@@ -8,22 +8,21 @@ importers:
 
   .:
     dependencies:
-      '@manypkg/cli':
-        specifier: ^0.22.0
-        version: 0.22.0
-      turbo:
-        specifier: ^2.5.4
-        version: 2.8.9
-    devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.7.1
         version: 4.7.1(prettier@3.8.1)
+      '@manypkg/cli':
+        specifier: ^0.22.0
+        version: 0.22.0
       '@tsmono/prettier-config':
         specifier: workspace:*
         version: link:tooling/prettier-config
       prettier:
         specifier: ^3.7.4
         version: 3.8.1
+      turbo:
+        specifier: ^2.5.4
+        version: 2.8.9
 
   apps/scout:
     dependencies:
