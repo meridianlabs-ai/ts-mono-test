@@ -26,6 +26,15 @@ Audit all files moving to the shared package for similar `declare const` /
 `define` patterns — any global injected by `vite.config.ts` needs the same
 treatment.
 
+## General migration workflow
+
+When pulling in updated source from `inspect_scout`, copy only the **source
+files** (`.ts`, `.tsx`, `.css`, etc.). Do **not** overwrite `package.json`,
+`tsconfig.json`, ESLint configs, Prettier configs, or other tooling files —
+the monorepo versions have been customized with workspace dependencies,
+shared configs, and monorepo-specific scripts. Use the existing ones in
+`tsmono` and manually merge any new dependency additions.
+
 ## Tooling / config
 
 ### Root `pnpm test` script
@@ -36,3 +45,10 @@ The trial repo did not originally wire up `pnpm test`. Added:
 - `turbo.json`: `"test": { "dependsOn": ["^build"] }`
 
 Ensure the real repo includes these from the start.
+
+### Preserve `.prettierignore` files when updating source
+
+When pulling in new source from upstream, do not overwrite the `.prettierignore`
+files. Each app/package may have its own `.prettierignore` for its local
+`pnpm format` script, and the root `.prettierignore` covers the repo-wide
+`pnpm format`. Merge any new ignore entries rather than replacing the files.
