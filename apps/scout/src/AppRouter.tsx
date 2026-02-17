@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC, lazy, Suspense, useEffect } from "react";
 import {
   createHashRouter,
   Outlet,
@@ -7,16 +7,46 @@ import {
 } from "react-router-dom";
 
 import { ActivityBarLayout } from "./app/components/ActivityBarLayout";
-import { ProjectPanel } from "./app/project/ProjectPanel";
-import { RunScanPanel } from "./app/runScan/RunScanPanel";
-import { ScanPanel } from "./app/scan/ScanPanel";
-import { ScannerResultPanel } from "./app/scannerResult/ScannerResultPanel";
-import { ScansPanel } from "./app/scans/ScansPanel";
 import { useAppConfig } from "./app/server/useAppConfig";
-import { TranscriptPanel } from "./app/transcript/TranscriptPanel";
-import { TranscriptsPanel } from "./app/transcripts/TranscriptsPanel";
-import { ValidationPanel } from "./app/validation/ValidationPanel";
 import { FindBand } from "./components/FindBand";
+import { PulsingDots } from "./components/PulsingDots";
+
+const ProjectPanel = lazy(() =>
+  import("./app/project/ProjectPanel").then((m) => ({
+    default: m.ProjectPanel,
+  })),
+);
+const RunScanPanel = lazy(() =>
+  import("./app/runScan/RunScanPanel").then((m) => ({
+    default: m.RunScanPanel,
+  })),
+);
+const ScanPanel = lazy(() =>
+  import("./app/scan/ScanPanel").then((m) => ({ default: m.ScanPanel })),
+);
+const ScannerResultPanel = lazy(() =>
+  import("./app/scannerResult/ScannerResultPanel").then((m) => ({
+    default: m.ScannerResultPanel,
+  })),
+);
+const ScansPanel = lazy(() =>
+  import("./app/scans/ScansPanel").then((m) => ({ default: m.ScansPanel })),
+);
+const TranscriptPanel = lazy(() =>
+  import("./app/transcript/TranscriptPanel").then((m) => ({
+    default: m.TranscriptPanel,
+  })),
+);
+const TranscriptsPanel = lazy(() =>
+  import("./app/transcripts/TranscriptsPanel").then((m) => ({
+    default: m.TranscriptsPanel,
+  })),
+);
+const ValidationPanel = lazy(() =>
+  import("./app/validation/ValidationPanel").then((m) => ({
+    default: m.ValidationPanel,
+  })),
+);
 import {
   LoggingNavigate,
   useLoggingNavigate,
@@ -57,7 +87,11 @@ const createAppLayout = (routerConfig: AppRouterConfig) => {
     useWindowMessaging();
     useRoutingInitializer(config.scans.dir);
 
-    const content = <Outlet />;
+    const content = (
+      <Suspense fallback={<PulsingDots size="medium" />}>
+        <Outlet />
+      </Suspense>
+    );
     return (
       <>
         {showFind && (
