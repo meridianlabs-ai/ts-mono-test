@@ -2,7 +2,7 @@ import { keepPreviousData } from "@tanstack/react-query";
 import { SortingState } from "@tanstack/react-table";
 import { useMemo } from "react";
 
-import { AsyncData, useAsyncDataFromQuery } from "@tsmono/common";
+import { AsyncData, useAsyncDataFromQuery } from "@tsmono/util";
 
 import { sortingStateToOrderBy } from ".";
 import { Condition } from "../../query";

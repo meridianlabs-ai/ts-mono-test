@@ -1,6 +1,6 @@
 import { http, HttpResponse } from "msw";
 
-import { encodeBase64Url } from "@tsmono/common";
+import { encodeBase64Url } from "@tsmono/util";
 
 import type {
   MessagesEventsResponse,

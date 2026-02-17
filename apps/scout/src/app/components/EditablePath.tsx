@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { isUri, prettyDirUri } from "@tsmono/common";
+import { isUri, prettyDirUri } from "@tsmono/util";
 
 import { EditableText } from "./EditableText";
 

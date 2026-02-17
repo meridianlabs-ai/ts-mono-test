@@ -2,7 +2,7 @@ import { skipToken } from "@tanstack/react-query";
 import clsx from "clsx";
 import { FC, useRef } from "react";
 
-import { useRequiredParams } from "@tsmono/common";
+import { useRequiredParams } from "@tsmono/util";
 
 import { ApiError } from "../../api/request";
 import { ErrorPanel } from "../../components/ErrorPanel";

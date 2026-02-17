@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC, Fragment, ReactNode } from "react";
 
-import { isJson } from "@tsmono/common";
+import { isJson } from "@tsmono/util";
 
 import {
   ContentAudio,

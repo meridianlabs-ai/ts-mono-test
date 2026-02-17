@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import { formatNumber, printObject } from "@tsmono/common";
+import { formatNumber, printObject } from "@tsmono/util";
 
 import { ApplicationIcons } from "../../components/icons";
 import type { ScanRow as ApiScanRow } from "../../types/api-types";

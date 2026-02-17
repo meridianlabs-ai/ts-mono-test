@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { CSSProperties, FC, useMemo, useRef } from "react";
 
-import { maybeBase64 } from "@tsmono/common";
+import { maybeBase64 } from "@tsmono/util";
 
 import "./JsonPanel.css";
 

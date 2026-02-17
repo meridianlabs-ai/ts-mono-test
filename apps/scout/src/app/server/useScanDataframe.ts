@@ -5,7 +5,7 @@ import {
   AsyncData,
   decodeArrowBytes,
   useAsyncDataFromQuery,
-} from "@tsmono/common";
+} from "@tsmono/util";
 
 import { useApi } from "../../state/store";
 import { expandResultsetRows } from "../utils/arrow";

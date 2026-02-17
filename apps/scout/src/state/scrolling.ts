@@ -1,7 +1,7 @@
 import { RefObject, useCallback, useEffect, useMemo, useRef } from "react";
 import { StateCallback, StateSnapshot, VirtuosoHandle } from "react-virtuoso";
 
-import { createLogger, debounce } from "@tsmono/common";
+import { createLogger, debounce } from "@tsmono/util";
 
 import { useStore } from "./store";
 

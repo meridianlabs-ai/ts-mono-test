@@ -13,7 +13,7 @@ import { AgGridReact } from "ag-grid-react";
 import { ColumnTable } from "arquero";
 import { FC, useCallback, useEffect, useMemo, useRef } from "react";
 
-import { centerTruncate } from "@tsmono/common";
+import { centerTruncate } from "@tsmono/util";
 
 import { useSetDataframeGridApi } from "../app/scan/scanners/dataframe/DataframeGridApiContext";
 import { useStore } from "../state/store";

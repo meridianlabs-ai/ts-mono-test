@@ -2,7 +2,7 @@ import { skipToken } from "@tanstack/react-query";
 import { SortingState } from "@tanstack/react-table";
 import { useEffect, useMemo } from "react";
 
-import { AsyncData, data, loading } from "@tsmono/common";
+import { AsyncData, data, loading } from "@tsmono/util";
 
 import { Condition } from "../../query";
 import { TranscriptsResponse } from "../../types/api-types";

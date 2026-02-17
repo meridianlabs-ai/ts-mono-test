@@ -4,7 +4,7 @@ import {
   formatDateForInput,
   formatDateTimeForInput,
   parseDateFromInput,
-} from "@tsmono/common";
+} from "@tsmono/util";
 
 import { ConditionBuilder } from "../../../query";
 import type { OperatorModel, ScalarValue } from "../../../query";

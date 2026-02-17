@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 
-import { decodeBase64Url } from "@tsmono/common";
+import { decodeBase64Url } from "@tsmono/util";
 
 import { useStore } from "../../state/store";
 

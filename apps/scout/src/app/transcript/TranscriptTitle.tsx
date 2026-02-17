@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC } from "react";
 
-import { formatDateTime, formatNumber, formatTime } from "@tsmono/common";
+import { formatDateTime, formatNumber, formatTime } from "@tsmono/util";
 
 import { Transcript } from "../../types/api-types";
 import { HeadingGrid, HeadingValue } from "../components/HeadingGrid";

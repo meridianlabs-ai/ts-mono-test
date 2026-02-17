@@ -1,7 +1,7 @@
 import JSON5 from "json5";
 import { useEffect, useMemo } from "react";
 
-import { basename } from "@tsmono/common";
+import { basename } from "@tsmono/util";
 
 import { useAppConfig } from "../app/server/useAppConfig";
 import { useLoggingNavigate } from "../debugging/navigationDebugging";

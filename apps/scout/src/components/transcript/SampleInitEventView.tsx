@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
 
-import { formatDateTime, toArray } from "@tsmono/common";
+import { formatDateTime, toArray } from "@tsmono/util";
 
 import { ChatMessage, SampleInitEvent } from "../../types/api-types";
 import { ChatView } from "../chat/ChatView";

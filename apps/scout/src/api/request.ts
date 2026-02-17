@@ -1,4 +1,4 @@
-import { asyncJsonParse } from "@tsmono/common";
+import { asyncJsonParse } from "@tsmono/util";
 
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "HEAD";
 

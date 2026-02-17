@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
-import { AsyncData, data } from "@tsmono/common";
 import { useMapAsyncData } from "@tsmono/react";
+import { AsyncData, data } from "@tsmono/util";
 
 import { useStore } from "../../state/store";
 import { Status } from "../../types/api-types";

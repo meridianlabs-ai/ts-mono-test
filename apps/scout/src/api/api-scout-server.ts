@@ -1,6 +1,6 @@
 import { decompress as decompressZstd } from "fzstd";
 
-import { asyncJsonParse, encodeBase64Url } from "@tsmono/common";
+import { asyncJsonParse, encodeBase64Url } from "@tsmono/util";
 
 import { Input, InputType, ScanResultInputData } from "../app/types";
 import type { Condition, OrderByModel } from "../query";

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
 
-import { isImage } from "@tsmono/common";
+import { isImage } from "@tsmono/util";
 
 import { ContentDocument } from "../../../types/api-types";
 import { iconForMimeType } from "../../icons";

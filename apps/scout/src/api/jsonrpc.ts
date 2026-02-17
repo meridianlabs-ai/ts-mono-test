@@ -1,4 +1,4 @@
-import { VSCodeApi } from "@tsmono/common";
+import { VSCodeApi } from "@tsmono/util";
 
 import { JsonArray, JsonObject, JsonValue } from "../types/json-value";
 

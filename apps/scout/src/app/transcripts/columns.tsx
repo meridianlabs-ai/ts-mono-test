@@ -7,7 +7,7 @@ import {
   formatTime,
   printArray,
   printObject,
-} from "@tsmono/common";
+} from "@tsmono/util";
 
 import { ApplicationIcons } from "../../components/icons";
 import { FilterType } from "../../state/store";

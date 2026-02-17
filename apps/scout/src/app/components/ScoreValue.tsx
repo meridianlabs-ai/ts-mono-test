@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC } from "react";
 
-import { isRecord } from "@tsmono/common";
+import { isRecord } from "@tsmono/util";
 
 import { MetaDataGrid } from "../../components/content/MetaDataGrid";
 import { JsonValue } from "../../types/api-types";

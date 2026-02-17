@@ -88,7 +88,7 @@
     "@popperjs/core": "^2.11.8",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.13.12",
-    "@tsmono/common": "workspace:*",
+    "@tsmono/util": "workspace:*",
     "@tsmono/react": "workspace:*",
     "@vscode-elements/react-elements": "^2.4.0",
     "ag-grid-community": "^34.3.1",

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC } from "react";
 
-import { formatNumber } from "@tsmono/common";
+import { formatNumber } from "@tsmono/util";
 
 import { Card, CardBody, CardHeader } from "../../../components/Card";
 import { MetaDataGrid } from "../../../components/content/MetaDataGrid";

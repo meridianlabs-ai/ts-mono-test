@@ -5,7 +5,7 @@ import { http, HttpResponse, passthrough } from "msw";
 import { beforeAll, expect, it } from "vitest";
 import { ZstdCodec } from "zstd-codec";
 
-import { encodeBase64Url } from "@tsmono/common";
+import { encodeBase64Url } from "@tsmono/util";
 
 import { server } from "../../test/setup-msw";
 import { createTestWrapper } from "../../test/test-utils";

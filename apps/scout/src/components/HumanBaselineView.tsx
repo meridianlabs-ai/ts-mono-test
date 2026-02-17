@@ -1,6 +1,6 @@
 import { FC, ReactNode, useEffect } from "react";
 
-import { formatDateTime, formatTime } from "@tsmono/common";
+import { formatDateTime, formatTime } from "@tsmono/util";
 
 import { AsciinemaPlayer } from "./AsciinemaPlayer";
 

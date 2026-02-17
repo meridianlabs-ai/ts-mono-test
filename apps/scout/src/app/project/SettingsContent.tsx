@@ -6,7 +6,7 @@ import {
 } from "@vscode-elements/react-elements";
 import { FC, useCallback, useEffect, useRef, useState } from "react";
 
-import { STABLE_EMPTY_OBJECT } from "@tsmono/common";
+import { STABLE_EMPTY_OBJECT } from "@tsmono/util";
 
 import {
   BatchConfig,

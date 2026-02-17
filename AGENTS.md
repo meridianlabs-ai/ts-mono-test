@@ -10,7 +10,7 @@ inspect_scout by sharing code in a monorepo with shared tooling.
 ```
 tsmono/
 ├── apps/scout/          scout               — Full copy of inspect_scout www/
-├── packages/common/     @tsmono/common      — Shared utilities (from www/src/utils/)
+├── packages/util/     @tsmono/util      — Shared utilities (from www/src/utils/)
 └── tooling/
     ├── eslint-config/   @tsmono/eslint-config  — Base + React ESLint configs
     ├── prettier-config/ @tsmono/prettier-config — Shared Prettier config
@@ -20,7 +20,7 @@ tsmono/
 ## Principles
 
 - Tooling defaults are **fully strict** — new packages get the strictest rules
-- Legacy code gets **local overrides** (apps/scout and packages/common relax
+- Legacy code gets **local overrides** (apps/scout and packages/util relax
   `no-unsafe-*`, `no-explicit-any`, etc.)
 - Use `@tsmono/` scope (not `@meridian/`) — this is a trial repo
 
@@ -43,7 +43,7 @@ All commands run from the repo root.
 - **Package manager**: pnpm (v10.29.3). Never use npm or yarn.
 - **Node**: >=22
 - **Workspace deps**: Use `"workspace:*"` protocol
-- **Imports**: `@tsmono/common` is a barrel export — import from the package,
+- **Imports**: `@tsmono/util` is a barrel export — import from the package,
   not from individual files
 - **ESLint configs**: Consumers import `@tsmono/eslint-config/base` or
   `@tsmono/eslint-config/react`, then add local `languageOptions` with
@@ -61,7 +61,7 @@ it up to date as you discover new issues.
 
 - `apps/scout/` — copied from `inspect_scout/src/inspect_scout/_view/www/`
   with `src/utils/` removed
-- `packages/common/src/` — the 29 utility files from `www/src/utils/`
+- `packages/util/src/` — the 29 utility files from `www/src/utils/`
 - `chatMessage.ts` and `react-query.ts` have local type definitions for
   `ChatMessage` and `ApiError` (originally imported from app code)
-- 122 imports across scout were rewritten from `../utils/X` to `@tsmono/common`
+- 122 imports across scout were rewritten from `../utils/X` to `@tsmono/util`

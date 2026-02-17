@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC, Fragment } from "react";
 
-import { formatNumber } from "@tsmono/common";
+import { formatNumber } from "@tsmono/util";
 
 import { ModelUsage } from "../../types/api-types";
 import styles from "./ModelUsagePanel.module.css";

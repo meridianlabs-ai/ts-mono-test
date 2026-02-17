@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC, Fragment } from "react";
 
-import { formatDateTime } from "@tsmono/common";
+import { formatDateTime } from "@tsmono/util";
 
 import { ScoreValue } from "../../app/components/ScoreValue";
 import { ScoreEvent } from "../../types/api-types";

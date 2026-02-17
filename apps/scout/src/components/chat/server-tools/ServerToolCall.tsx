@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { FC, ReactNode } from "react";
 
-import { asJsonObjArray, isJson } from "@tsmono/common";
+import { asJsonObjArray, isJson } from "@tsmono/util";
 
 import { ContentToolUse } from "../../../types/api-types";
 import { RecordTree } from "../../content/RecordTree";

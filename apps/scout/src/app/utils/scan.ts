@@ -1,4 +1,4 @@
-import { toRelativePath } from "@tsmono/common";
+import { toRelativePath } from "@tsmono/util";
 
 import { Status } from "../../types/api-types";
 
