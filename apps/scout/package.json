@@ -15,7 +15,6 @@
   ],
   "scripts": {
     "types:generate": "node scripts/generate-types.js",
-    "prebuild": "pnpm types:generate",
     "build": "npm run build:app",
     "build:lib": "vite build --mode library",
     "build:app": "vite build --mode development",
