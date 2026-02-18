@@ -27,7 +27,6 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "typecheck": "tsc --noEmit",
-    "check": "true",
     "test": "vitest run",
     "test:watch": "vitest",
     "e2e": "playwright test --config playwright.config.ts",

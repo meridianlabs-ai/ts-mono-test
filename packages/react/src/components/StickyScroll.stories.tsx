@@ -1,7 +1,6 @@
-import { FC, useRef } from "react";
-
-import { action } from "storybook/actions";
 import type { Meta, StoryObj } from "@storybook/react";
+import { FC, useRef } from "react";
+import { action } from "storybook/actions";
 
 import { StickyScroll } from "./StickyScroll";
 
@@ -36,9 +35,14 @@ const ScrollableDemo: FC<DemoProps> = ({
       }}
     >
       <div style={{ padding: "16px" }}>
-        <h3 style={{ margin: "0 0 8px" }}>Scroll down to see sticky behavior</h3>
+        <h3 style={{ margin: "0 0 8px" }}>
+          Scroll down to see sticky behavior
+        </h3>
         {Array.from({ length: 5 }, (_, i) => (
-          <p key={`before-${String(i)}`} style={{ margin: "8px 0", color: "#666" }}>
+          <p
+            key={`before-${String(i)}`}
+            style={{ margin: "8px 0", color: "#666" }}
+          >
             Content before the sticky element (paragraph {i + 1})
           </p>
         ))}
@@ -67,7 +71,10 @@ const ScrollableDemo: FC<DemoProps> = ({
 
       <div style={{ padding: "16px" }}>
         {Array.from({ length: 30 }, (_, i) => (
-          <p key={`after-${String(i)}`} style={{ margin: "8px 0", color: "#666" }}>
+          <p
+            key={`after-${String(i)}`}
+            style={{ margin: "8px 0", color: "#666" }}
+          >
             Content after the sticky element (paragraph {i + 1})
           </p>
         ))}
@@ -86,7 +93,8 @@ const meta = {
   argTypes: {
     offsetTop: {
       control: { type: "number", min: 0, max: 200, step: 4 },
-      description: "Pixels from the top of the scroll container where the element sticks",
+      description:
+        "Pixels from the top of the scroll container where the element sticks",
     },
     zIndex: {
       control: { type: "number", min: 0, max: 1000, step: 10 },
