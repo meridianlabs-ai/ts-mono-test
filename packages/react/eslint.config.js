@@ -4,14 +4,14 @@ import reactConfig from "@tsmono/eslint-config/react";
 
 export default tseslint.config(
   {
-    ignores: ["node_modules/", "dist/", "eslint.config.js"],
+    ignores: ["node_modules/", "dist/", "storybook-static/", "eslint.config.js"],
   },
   ...reactConfig,
   {
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ["eslint.config.js"],
+          allowDefaultProject: ["eslint.config.js", ".storybook/*.ts"],
         },
         tsconfigRootDir: import.meta.dirname,
       },

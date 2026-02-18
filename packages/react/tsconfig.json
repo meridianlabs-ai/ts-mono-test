@@ -1,5 +1,5 @@
 {
   "extends": "@tsmono/tsconfig/react.json",
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src", ".storybook"],
+  "exclude": ["node_modules", "dist", "storybook-static"]
 }
