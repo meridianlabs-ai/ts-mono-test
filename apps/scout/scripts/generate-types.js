@@ -1,8 +1,9 @@
 /**
  * Generate TypeScript types from OpenAPI schema with custom transforms.
  *
- * Uses openapi-typescript Node API with postTransform to fix JsonValue type.
- * openapi-typescript inlines recursive $refs, causing TS2502 errors.
+ * Reads openapi.json from the Python repo (requires submodule mode) and
+ * generates TypeScript types using openapi-typescript with postTransform
+ * to fix the JsonValue recursive type (avoids TS2502 errors).
  */
 import fs from "fs";
 import path from "path";
@@ -11,9 +12,16 @@ import { fileURLToPath } from "url";
 import openapiTS, { astToString } from "openapi-typescript";
 import ts from "typescript";
 
+import { requirePythonRepoRoot } from "./python-repo.js";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const SCHEMA_PATH = path.join(ROOT, "openapi.json");
+
+const pythonRoot = requirePythonRepoRoot();
+const SCHEMA_PATH = path.join(
+  pythonRoot,
+  "src/inspect_scout/_view/openapi.json"
+);
 const OUTPUT_PATH = path.join(ROOT, "src/types/generated.ts");
 
 // Create the JsonValue type reference

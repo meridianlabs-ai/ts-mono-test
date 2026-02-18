@@ -1,4 +1,3 @@
-import { existsSync, readFileSync } from "fs";
 import { join, resolve } from "path";
 
 import react from "@vitejs/plugin-react";
@@ -6,19 +5,16 @@ import pc from "picocolors";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 
-function resolveOutputDir(): string {
-  const pythonRoot = resolve(__dirname, "../../../../../..");
-  const pyproject = join(pythonRoot, "pyproject.toml");
+import { findPythonRepoRoot } from "./scripts/python-repo.js";
 
-  if (existsSync(pyproject)) {
-    const content = readFileSync(pyproject, "utf-8");
-    if (content.includes('name = "inspect_scout"')) {
-      const outDir = join(pythonRoot, "src/inspect_scout/_view/dist");
-      console.log(
-        `${pc.cyan("[vite]")} ${pc.bold(pc.red("Running as inspect_scout submodule"))} — output: ${pc.dim(outDir)}`
-      );
-      return outDir;
-    }
+function resolveOutputDir(): string {
+  const pythonRoot = findPythonRepoRoot();
+  if (pythonRoot) {
+    const outDir = join(pythonRoot, "src/inspect_scout/_view/dist");
+    console.log(
+      `${pc.cyan("[vite]")} ${pc.bold(pc.red("Running as inspect_scout submodule"))} — output: ${pc.dim(outDir)}`
+    );
+    return outDir;
   }
 
   return "dist";
