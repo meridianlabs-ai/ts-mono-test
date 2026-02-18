@@ -4,7 +4,12 @@ import reactConfig from "@tsmono/eslint-config/react";
 
 export default tseslint.config(
   {
-    ignores: ["node_modules/", "dist/", "storybook-static/", "eslint.config.js"],
+    ignores: [
+      "node_modules/",
+      "dist/",
+      "storybook-static/",
+      "eslint.config.js",
+    ],
   },
   ...reactConfig,
   {

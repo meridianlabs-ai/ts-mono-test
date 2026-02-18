@@ -23,6 +23,13 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      - name: Cache Turbo
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ github.sha }}
+          restore-keys: turbo-
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -41,6 +48,13 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+
+      - name: Cache Turbo
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ github.sha }}
+          restore-keys: turbo-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -61,6 +75,13 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      - name: Cache Turbo
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ github.sha }}
+          restore-keys: turbo-
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -80,6 +101,13 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      - name: Cache Turbo
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ github.sha }}
+          restore-keys: turbo-
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -98,6 +126,13 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+
+      - name: Cache Turbo
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ github.sha }}
+          restore-keys: turbo-
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

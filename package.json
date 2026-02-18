@@ -14,8 +14,8 @@
     "manypkg:check": "manypkg check",
     "manypkg:fix": "manypkg fix",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,cjs,json,css,md}\"",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mjs,cjs,json,css,md}\""
+    "format": "turbo run format",
+    "format:check": "turbo run format:check"
   },
   "//": "manypkg requires root deps in 'dependencies', not 'devDependencies'. The root is private and never published, so the distinction is meaningless here — it's a consistency convention.",
   "dependencies": {

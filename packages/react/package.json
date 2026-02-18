@@ -10,7 +10,8 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "storybook": "storybook dev -p 6006",
